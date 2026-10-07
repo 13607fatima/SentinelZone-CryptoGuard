@@ -22,6 +22,7 @@ jobs:
           python3 scripts/check-repository.py
           python3 -m unittest discover -s tests/Repository -v
           python3 scripts/secret-scan.py
+          python3 scripts/validate-debian-license-material.py
           dotnet restore SentinelZone.CryptoGuard.Linux.slnx --locked-mode --configfile NuGet.Config
           dotnet build SentinelZone.CryptoGuard.Linux.slnx -c Release --no-restore
       - run: chmod +x debian/rules debian/postinst debian/postrm && dpkg-buildpackage -b -us -uc

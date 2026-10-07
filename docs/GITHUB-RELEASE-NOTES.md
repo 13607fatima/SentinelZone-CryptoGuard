@@ -16,11 +16,11 @@ Phase 21–22 is local agent/risk scope. Phase 23 production backend, enrollment
 - Native Windows/Linux replay parity: 10 PASS (370 rows).
 - ML training methodology: 6 PASS.
 
-These measurements come from the supplied original evaluation bundle. Repository preparation reran Linux managed suites with the pinned SDK, but did not rerun native Windows tests or hosted Actions and did not rebuild the attached release binaries. See RELEASE_MANIFEST.md for actual new checks and limitations.
+These measurements come from the supplied original evaluation bundle. Repository preparation did not rerun the native .NET suites or hosted Actions and did not rebuild the attached binaries. See RELEASE_MANIFEST.md for actual new checks and limitations.
 
 ## Provenance
 
-The prebuilt assets correspond to the original `SentinelZone-CryptoGuard-Source-0.22.2-rc.1.zip` (SHA-256 `5ac89e48dfd7017cc0f4dd90b5ba7fd942d584aac4603f6d6d0555f8fc2209e9`). The repository tag/GitHub-generated source archive represent the prepared standalone source with documentation, publication checks, a Debian documentation-path correction, Linux portable lock correction and locked Windows migration-test restore. Application source is unchanged; no new binary-parity claim is made for a rebuild from this tag.
+The prebuilt assets correspond to the original `SentinelZone-CryptoGuard-Source-0.22.2-rc.1.zip` (SHA-256 `5ac89e48dfd7017cc0f4dd90b5ba7fd942d584aac4603f6d6d0555f8fc2209e9`). The repository tag/GitHub-generated source archive represent the prepared standalone source with documentation, publication checks, a Debian documentation-path correction and locked Windows migration-test restore. Application source is unchanged; no new binary-parity claim is made for a rebuild from this tag.
 
 Original SHA256SUMS/SBOM/release-manifest describe original release bytes. The GitHub-ready source ZIP has its own checksum. Keep required third-party notices and corresponding-source archives. The project owner has not yet selected a final repository license; no project-license grant is invented.
 

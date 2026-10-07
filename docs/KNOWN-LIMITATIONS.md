@@ -13,7 +13,7 @@
 - RandomX experimental detection is not included.
 - Production backend, enrollment, remote ingestion and Splunk transport are not implemented by design. There is no workload process-kill or persistence-removal mechanism.
 - The project owner has not selected a final repository license. Supply-chain inventories are not distribution approval or proof of code signing.
-- Hosted GitHub Actions has not been executed as part of this preparation. The measured Linux source build does not prove Windows builds or installer execution.
+- Hosted GitHub Actions has not been executed as part of this preparation. Local checks do not prove Windows/Linux build or installer success.
 
 All 17 production gates remain UNVERIFIED: both 72-hour soaks, both actual OS reboots, physical NVIDIA/AMD/Intel, no-driver/permission-blocked GPU cases, physical temperatures, interactive idle, broad real workloads, physical disk exhaustion, reference-host resource targets, production ML model acceptance, signing and hosted Actions. See the immutable [acceptance matrix](release-evidence/v0.22.2-rc.1/validation/acceptance-matrix.json).
 

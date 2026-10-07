@@ -16,3 +16,17 @@ License: MIT-and-component-notices
  The compiled Native AOT binary contains parts of .NET. The complete MIT text
  and upstream component notices are installed alongside this copyright file.
  NVML and other GPU drivers are optional system libraries and are not bundled.
+
+Files: licenses/Mono.Posix.NETStandard-MIT.txt
+Copyright: Microsoft Corporation and the Mono contributors;
+ additional component holders are identified in the full upstream notice.
+License: Mono-upstream-component-notices
+ The complete upstream mono/mono LICENSE is distributed verbatim in
+ /usr/share/doc/cryptoguard-agent/licenses/Mono.Posix.NETStandard-MIT.txt
+ (possibly compressed by the Debian documentation helpers). It includes
+ MIT, BSD and other component notices; no blanket SPDX license is inferred
+ for Mono.Posix.NETStandard from its legacy license URL.
+Comment:
+ NuGet Mono.Posix.NETStandard 1.0.0 identifies Microsoft as author/owner and
+ https://go.microsoft.com/fwlink/?linkid=869050 as its upstream license URL.
+ The full plain-text notice replaces the redundant GitHub-rendered HTML page.

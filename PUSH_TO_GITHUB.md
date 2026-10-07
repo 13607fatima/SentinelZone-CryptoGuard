@@ -29,7 +29,7 @@ git add .
 python scripts/secret-scan.py --staged
 git status
 git diff --cached --stat
-git diff --cached --check -- . ':(exclude)licenses/**'
+git diff --cached --check
 git diff --cached
 git commit -m "Initial SentinelZone CryptoGuard release"
 git remote add origin https://github.com/USERNAME/SentinelZone-CryptoGuard.git
@@ -37,7 +37,7 @@ git remote -v
 git push -u origin main
 ```
 
-Stop if any validation fails. If you change a file after staging, stage it again and rerun the staged scan. Ignore rules do not remove already tracked files. The cosmetic whitespace check excludes preserved upstream `licenses/` material because its original whitespace must remain intact; secret scanning still includes it. Authenticate using your normal Git credential helper/SSH configuration; never put a token in the remote URL or commit it.
+Stop if any validation fails. If you change a file after staging, stage it again and rerun the staged scan. Ignore rules do not remove already tracked files. Authenticate using your normal Git credential helper/SSH configuration; never put a token in the remote URL or commit it.
 
 ## Verify GitHub Actions
 
