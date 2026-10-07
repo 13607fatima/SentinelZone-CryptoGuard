@@ -8,7 +8,7 @@
 
 Git tracks source, contracts, schemas, tests, packaging definitions, documentation, locks and required license/source materials. The six large product binaries/packages belong on GitHub Releases. The original source ZIP is a historical build baseline; GitHub's automatic source archive and the GitHub-ready ZIP describe the prepared handoff instead. Keep those identities distinct.
 
-This preparation changes documentation/hygiene/build validation, fixes a case-sensitive Debian documentation input and stale Linux portable project-reference lock, and locks the Windows migration-test restore. It does not change application source or rebuild the supplied binaries. A future rebuild must have a new manifest/SBOM/checksums and measured validation; do not reuse old byte-parity claims for it.
+This preparation changes documentation/hygiene/build validation, fixes a case-sensitive Debian documentation input and locks the Windows migration-test restore. It does not change application source or rebuild the supplied binaries. A future rebuild must have a new manifest/SBOM/checksums and measured validation; do not reuse old byte-parity claims for it.
 
 ## Build and validate new artifacts
 

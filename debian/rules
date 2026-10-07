@@ -8,6 +8,7 @@ export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 	dh $@
 
 override_dh_auto_configure:
+	python3 scripts/validate-debian-license-material.py
 	dotnet restore src/CryptoGuard.Agent.Linux -r linux-x64 --locked-mode
 
 override_dh_auto_build:

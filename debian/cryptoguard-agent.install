@@ -2,4 +2,11 @@ artifacts/linux-x64/cryptoguard-agent usr/lib/cryptoguard
 packaging/agent.json etc/cryptoguard
 schemas/telemetry.schema.json usr/share/cryptoguard/schemas
 rules/ruleset.json usr/share/cryptoguard/rules
-licenses/* usr/share/doc/cryptoguard-agent/licenses
+# Install only plain-text notices, metadata and corresponding-source archives.
+# Do not use licenses/*: a rendered HTML license page (for example a GitHub
+# web export) must never enter the Debian documentation tree.
+licenses/*.txt usr/share/doc/cryptoguard-agent/licenses
+licenses/*.json usr/share/doc/cryptoguard-agent/licenses
+licenses/*.zip usr/share/doc/cryptoguard-agent/licenses
+licenses/windows-alpha3/*.txt usr/share/doc/cryptoguard-agent/licenses/windows-alpha3
+licenses/windows-alpha3/*.zip usr/share/doc/cryptoguard-agent/licenses/windows-alpha3

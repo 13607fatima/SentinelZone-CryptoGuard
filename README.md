@@ -191,8 +191,8 @@ Linux:
 
 ```bash
 dotnet --version
-dotnet restore SentinelZone.CryptoGuard.Linux.slnx --locked-mode --configfile NuGet.Config --disable-parallel -m:1 -p:BuildInParallel=false
-dotnet build SentinelZone.CryptoGuard.Linux.slnx -c Release --no-restore -m:1 -p:BuildInParallel=false
+dotnet restore SentinelZone.CryptoGuard.Linux.slnx --locked-mode --configfile NuGet.Config
+dotnet build SentinelZone.CryptoGuard.Linux.slnx -c Release --no-restore
 # Ubuntu packaging prerequisites; the pinned SDK must already be installed.
 sudo apt-get install clang zlib1g-dev build-essential debhelper dpkg-dev fakeroot lintian python3-jsonschema
 chmod +x debian/rules debian/postinst debian/postrm

@@ -27,3 +27,10 @@ Research-only Python training requirements have their own upstream licenses;
 the Python packages and research model are not runtime binary dependencies.
 Project owner licensing/signing policy remains separate from dependency notices.
 See docs/RESEARCH-SOURCES.md and the SPDX inventory for provenance details.
+
+Mono.Posix.NETStandard 1.0.0 (Microsoft) uses its upstream legacy license URL
+https://go.microsoft.com/fwlink/?linkid=869050, which resolves to mono/mono LICENSE.
+The complete upstream plain-text license/notice is preserved without alteration in
+licenses/Mono.Posix.NETStandard-MIT.txt (including its mixed component notices).
+The filename is historical; it is not a claim that every upstream component is MIT.
+A rendered GitHub HTML duplicate is not distributed.

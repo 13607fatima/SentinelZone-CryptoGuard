@@ -103,17 +103,6 @@ git add .
 python scripts/secret-scan.py --staged
 ```
 
-These static checks do not build packages. The packaging regressions catch the verified case-sensitive `docs/ACCEPTANCE.md` input defect and stale Linux portable project-reference lock graph. See [PUBLICATION-CHECKS.md](PUBLICATION-CHECKS.md) for scanner scope and synthetic exceptions.
+These static checks do not build packages. The Debian regression catches the verified case-sensitive `docs/ACCEPTANCE.md` input defect. See [PUBLICATION-CHECKS.md](PUBLICATION-CHECKS.md) for scanner scope and synthetic exceptions.
 
 Original Windows 139, Linux 122, native parity 10 and methodology 6 PASS counts remain in their historical report. New checks belong in a separate report and must not silently change that acceptance matrix.
-
-## Preparation-environment build note
-
-The preparation container required serialized MSBuild execution. Its ordinary parallel restore exited 1 without a useful error; the cause was not established. The following locked restore/build commands passed after the focused Linux portable-lock correction:
-
-```bash
-dotnet restore SentinelZone.CryptoGuard.Linux.slnx --locked-mode --configfile NuGet.Config --disable-parallel -m:1 -p:BuildInParallel=false
-dotnet build SentinelZone.CryptoGuard.Linux.slnx -c Release --no-restore -m:1 -p:BuildInParallel=false
-```
-
-These options change execution concurrency, not dependency locking or tests. See [build-validation.json](repository-preparation/build-validation.json) for the failed/default and passing/serial results. Native package rebuild, Windows and hosted CI remain unverified here.

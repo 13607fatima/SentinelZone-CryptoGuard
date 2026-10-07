@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "cryptoguard.contracts": {
+        "type": "Project"
+      },
+      "cryptoguard.core": {
+        "type": "Project",
+        "dependencies": {
+          "CryptoGuard.Contracts": "[0.22.2-rc.1, )"
+        }
+      },
+      "cryptoguard.ml": {
+        "type": "Project",
+        "dependencies": {
+          "CryptoGuard.Contracts": "[0.22.2-rc.1, )"
+        }
+      },
+      "cryptoguard.risk": {
+        "type": "Project",
+        "dependencies": {
+          "CryptoGuard.Contracts": "[0.22.2-rc.1, )",
+          "CryptoGuard.Core": "[0.22.2-rc.1, )",
+          "CryptoGuard.ML": "[0.22.2-rc.1, )"
+        }
+      }
+    },
+    "net10.0/linux-x64": {}
+  }
+}
