@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "scope": "Dependency inventory and source/license materials verified. Project owner distribution license remains a separate release policy decision.",
+  "runtime_packages": 66,
+  "materials": [
+    {
+      "path": "Chayesh-MIT-reference.txt",
+      "sha256": "fe3c293ce41c96054f823aa4af713021e26c47d4e14f66bd51682c882dcb8f58"
+    },
+    {
+      "path": "dotnet-LICENSE.txt",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310"
+    },
+    {
+      "path": "dotnet-THIRD-PARTY-NOTICES.txt",
+      "sha256": "66f1d4e44973185519bb4aa8a9718eb22fc7af2cc532e3ae9cfc4c127ee7fc54"
+    },
+    {
+      "path": "Mono.Posix.NETStandard-license.html",
+      "sha256": "b27729a66f1f001a1a0482c0b72d0176478d364889ecd288a7d217e0cfe9ba1f"
+    },
+    {
+      "path": "Mono.Posix.NETStandard-MIT.txt",
+      "sha256": "844242559dbdb96cb9cbe103b06c2bc8a349f19ad0b89d5c3cf830a8914333f6"
+    },
+    {
+      "path": "PawnIO-LGPL-2.1.txt",
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    {
+      "path": "PawnIO.Modules-0.1.6-origin.json",
+      "sha256": "1be62242e8358b7a4beef62737d527a4646cc9ff15632ebdb0d83ad6232541f0"
+    },
+    {
+      "path": "PawnIO.Modules-0.1.6-source.zip",
+      "sha256": "665b2f7a028f8a317bc35cd6fbf64986115909239019ff2d30d19260d7dd0982"
+    },
+    {
+      "path": "windows-alpha3/DOTNET-LICENSE.txt",
+      "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+    },
+    {
+      "path": "windows-alpha3/DOTNET-THIRD-PARTY-NOTICES.txt",
+      "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+    },
+    {
+      "path": "windows-alpha3/LHM-LICENSE.txt",
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+    },
+    {
+      "path": "windows-alpha3/LHM-THIRD-PARTY-NOTICES.txt",
+      "sha256": "a60d5ee62f4d700caff38566f42874d554b8b530437c72804fb28b958cfbda9b"
+    },
+    {
+      "path": "windows-alpha3/LibreHardwareMonitor-v0.9.6-source.zip",
+      "sha256": "28100b87fcd7a9a213c58fabe1174e4f3064975b5ab11799224766993ca1fbfc"
+    },
+    {
+      "path": "windows-alpha3/nuget-package-metadata.zip",
+      "sha256": "9b8e401e15e12dabdf0c9349f61fcfddd6a7d54a12df822f73830d776b4647a2"
+    }
+  ],
+  "references": [
+    {
+      "project": "LibreHardwareMonitorLib",
+      "version": "0.9.6",
+      "license": "MPL-2.0",
+      "usage": "pinned unmodified dependency; corresponding source archive supplied"
+    },
+    {
+      "project": "PawnIO.Modules",
+      "version": "0.1.6",
+      "license": "LGPL-2.1-or-later",
+      "usage": "LHM embedded module resources; source/tag/hash supplied; driver not installed by agent"
+    },
+    {
+      "project": "Microsoft.Windows.CsWin32",
+      "license": "MIT",
+      "usage": "build dependency metadata in NuGet archive"
+    },
+    {
+      "project": "HidSharp",
+      "version": "2.6.4",
+      "license": "Apache-2.0",
+      "usage": "LHM transitive dependency; LICENSE.txt in archive"
+    },
+    {
+      "project": "Mono.Posix.NETStandard",
+      "version": "1.0.0",
+      "license": "NOASSERTION",
+      "usage": "Upstream package uses legacy license URL; archive and linked Mono notices supplied; no invented SPDX simplification"
+    },
+    {
+      "project": "Chayesh/cryptoguard",
+      "license": "MIT",
+      "usage": "reference only; no code/model/dataset copied"
+    },
+    {
+      "project": "CryptoJackGuard",
+      "license": "uncertain",
+      "usage": "reference only; no source copied"
+    },
+    {
+      "project": "randomx-sniffer",
+      "license": "CC0 reference",
+      "usage": "not included"
+    },
+    {
+      "project": "ONNX Runtime",
+      "usage": "not used"
+    }
+  ]
+}

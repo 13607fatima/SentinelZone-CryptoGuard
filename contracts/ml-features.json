@@ -1,0 +1,248 @@
+{
+  "version": "0.22.2-rc.1-features.1",
+  "release_train": "0.22.2-rc.1",
+  "features": [
+    {
+      "name": "process_cpu_percent_host_capacity",
+      "type": "number|null",
+      "unit": "percent_host_capacity",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "process CPU seconds / actual elapsed / logical CPU count",
+      "windows_mapping": "GetProcessTimes",
+      "linux_mapping": "/proc/PID/stat",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "process_rss_bytes",
+      "type": "number|null",
+      "unit": "bytes",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "resident process memory",
+      "windows_mapping": "WorkingSet64",
+      "linux_mapping": "/proc/PID/stat RSS * page size",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "host_cpu_percent_host_capacity",
+      "type": "number|null",
+      "unit": "percent_host_capacity",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "busy fraction across all logical CPUs",
+      "windows_mapping": "GetSystemTimes",
+      "linux_mapping": "/proc/stat",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "host_memory_used_percent",
+      "type": "number|null",
+      "unit": "percent",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "(physical total - available) / total",
+      "windows_mapping": "GlobalMemoryStatusEx",
+      "linux_mapping": "MemAvailable / MemTotal",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "logical_cpu_count",
+      "type": "number|null",
+      "unit": "count",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "online logical processors",
+      "windows_mapping": "GetActiveProcessorCount",
+      "linux_mapping": "/proc/stat cpu lines",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "network_tx_bytes_per_sec",
+      "type": "number|null",
+      "unit": "bytes_per_second",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "non-loopback host interface counter delta / actual elapsed",
+      "windows_mapping": "NetworkInterface counters",
+      "linux_mapping": "/proc/net/dev",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "network_rx_bytes_per_sec",
+      "type": "number|null",
+      "unit": "bytes_per_second",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "non-loopback host interface counter delta / actual elapsed",
+      "windows_mapping": "NetworkInterface counters",
+      "linux_mapping": "/proc/net/dev",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "device_gpu_percent",
+      "type": "number|null",
+      "unit": "percent",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "maximum available device GPU utilization; never process attribution",
+      "windows_mapping": "LHM GPU Load",
+      "linux_mapping": "NVML or tested DRM gpu_busy_percent",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "cpu_temperature_celsius",
+      "type": "number|null",
+      "unit": "celsius",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "maximum explicitly identified CPU sensor; generic thermal zones excluded",
+      "windows_mapping": "LHM CPU Temperature",
+      "linux_mapping": "coretemp/k10temp hwmon",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "gpu_temperature_celsius",
+      "type": "number|null",
+      "unit": "celsius",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "maximum explicitly identified GPU temperature",
+      "windows_mapping": "LHM GPU Temperature",
+      "linux_mapping": "NVML or labeled GPU hwmon",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "process_count",
+      "type": "number|null",
+      "unit": "count",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "observed process count with complete inventory coverage",
+      "windows_mapping": "process snapshot",
+      "linux_mapping": "/proc snapshot",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "high_cpu_process_count",
+      "type": "number|null",
+      "unit": "count",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "observed processes at >=15% host capacity; complete inventory required",
+      "windows_mapping": "normalized snapshot",
+      "linux_mapping": "normalized snapshot",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "owned_tcp_connections",
+      "type": "number|null",
+      "unit": "count",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "TCP records attributed to this exact process instance",
+      "windows_mapping": "GetExtendedTcpTable",
+      "linux_mapping": "socket inode and /proc/PID/fd",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "established_tcp_connections",
+      "type": "number|null",
+      "unit": "count",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "established TCP records for exact process instance",
+      "windows_mapping": "GetExtendedTcpTable",
+      "linux_mapping": "socket inode and /proc/PID/fd",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "persistence_present",
+      "type": "number|null",
+      "unit": "boolean",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "enabled entry matching executable; not a malicious verdict",
+      "windows_mapping": "Run/RunOnce/Startup/Tasks/Services",
+      "linux_mapping": "systemd/cron/XDG",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "mining_argument_combination",
+      "type": "number|null",
+      "unit": "boolean",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "protocol with algorithm or wallet/user option; values discarded",
+      "windows_mapping": "semantic argument flags",
+      "linux_mapping": "semantic argument flags",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "suspicious_path",
+      "type": "number|null",
+      "unit": "boolean",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "normalized writable temporary location indicator",
+      "windows_mapping": "Windows path adapter",
+      "linux_mapping": "Linux path adapter",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "executable_trusted",
+      "type": "number|null",
+      "unit": "boolean",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "platform trust indicator, not equivalent provenance or authorization",
+      "windows_mapping": "offline Authenticode status",
+      "linux_mapping": "local package metadata integrity",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "executable_trusted is a platform evidence feature, not a common signature guarantee"
+    },
+    {
+      "name": "process_age_seconds",
+      "type": "number|null",
+      "unit": "seconds",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "observed_at minus verified process start time",
+      "windows_mapping": "creation time",
+      "linux_mapping": "boot time and /proc start ticks",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "host_memory_total_bytes",
+      "type": "number|null",
+      "unit": "bytes",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "total physical RAM",
+      "windows_mapping": "GlobalMemoryStatusEx",
+      "linux_mapping": "/proc/meminfo",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "sustained_compute_seconds",
+      "type": "number|null",
+      "unit": "seconds",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "unbroken process CPU>=15 or attributed GPU>=70 duration; gaps reset",
+      "windows_mapping": "shared risk state",
+      "linux_mapping": "shared risk state",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    },
+    {
+      "name": "process_gpu_percent",
+      "type": "number|null",
+      "unit": "percent",
+      "sampling_interval": "configured sample interval; GPU/network may use cached provider intervals; elapsed duration is measured",
+      "source": "attributed per-process GPU utilization; unavailable until reliable collector exists",
+      "windows_mapping": "unsupported",
+      "linux_mapping": "unsupported",
+      "missing_data_behavior": "null plus non-ok availability; training-only fold median, never implicit zero",
+      "comparability_note": "same normalized meaning on both OSes"
+    }
+  ]
+}

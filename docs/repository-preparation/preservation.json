@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "protected_files_byte_identical": 95,
+  "csharp_files_byte_identical": 63,
+  "scope": "All original C# application/tests; all original contracts, schemas, rules, licenses, SOURCES.md and THIRD-PARTY-NOTICES.txt",
+  "original_validation_files_preserved": 35,
+  "runtime_source_changes": 0,
+  "external_nuget_entries_changed": 0
+}

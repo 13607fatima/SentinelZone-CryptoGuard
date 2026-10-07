@@ -1,0 +1,1 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><TargetFramework>net10.0-windows</TargetFramework><OutputType>Exe</OutputType><AssemblyName>CryptoGuardHardwareHost</AssemblyName></PropertyGroup><ItemGroup><ProjectReference Include="../CryptoGuard.Contracts/CryptoGuard.Contracts.csproj"/><PackageReference Include="LibreHardwareMonitorLib" Version="0.9.6"/></ItemGroup></Project>

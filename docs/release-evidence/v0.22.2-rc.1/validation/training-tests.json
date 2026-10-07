@@ -1,0 +1,32 @@
+{
+  "passed": 6,
+  "failed": 0,
+  "skipped": 0,
+  "tests": [
+    {
+      "name": "test_training.TrainingTests.test_confusion_and_fpr",
+      "status": "PASS"
+    },
+    {
+      "name": "test_training.TrainingTests.test_host_and_session_disjoint",
+      "status": "PASS"
+    },
+    {
+      "name": "test_training.TrainingTests.test_inconsistent_session_label_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "test_training.TrainingTests.test_portable_export_matches_sklearn",
+      "status": "PASS"
+    },
+    {
+      "name": "test_training.TrainingTests.test_single_host_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "test_training.TrainingTests.test_train_only_imputation",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Training methodology only, synthetic unit fixtures; not detection accuracy"
+}

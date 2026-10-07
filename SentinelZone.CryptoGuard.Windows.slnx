@@ -1,0 +1,12 @@
+<Solution>
+  <Project Path="src/CryptoGuard.Contracts/CryptoGuard.Contracts.csproj" />
+  <Project Path="src/CryptoGuard.Core/CryptoGuard.Core.csproj" />
+  <Project Path="src/CryptoGuard.Risk/CryptoGuard.Risk.csproj" />
+  <Project Path="src/CryptoGuard.ML/CryptoGuard.ML.csproj" />
+  <Project Path="src/CryptoGuard.Replay/CryptoGuard.Replay.csproj" />
+  <Project Path="src/CryptoGuard.Platform.Windows/CryptoGuard.Platform.Windows.csproj" />
+  <Project Path="src/CryptoGuard.Agent.Windows/CryptoGuard.Agent.Windows.csproj" />
+  <Project Path="src/CryptoGuard.HardwareHost.Windows/CryptoGuard.HardwareHost.Windows.csproj" />
+  <Project Path="tests/Windows/CryptoGuard.Tests.csproj" />
+  <Project Path="tests/Contract/CryptoGuard.Unified.Tests.csproj" />
+</Solution>

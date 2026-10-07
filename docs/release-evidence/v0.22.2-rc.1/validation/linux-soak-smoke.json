@@ -1,0 +1,18 @@
+{
+  "requested_hours": 0.005,
+  "elapsed_hours": 0.00555849079194445,
+  "agent_exit": 0,
+  "logical_cpus": 4,
+  "samples": 3,
+  "cpu_mean": 0.26662590155431365,
+  "cpu_p95": 0.2999491761316855,
+  "rss_peak_bytes": 68198400,
+  "rss_growth_bytes": 6946816,
+  "crashes": 0,
+  "harness_error": null,
+  "service_restarts": null,
+  "mode": "portable child, no automatic restart",
+  "soak72h": "UNVERIFIED",
+  "reference_hardware_match": false,
+  "note": "A short run is not a 72-hour soak. Short-lived children may fall between samples."
+}

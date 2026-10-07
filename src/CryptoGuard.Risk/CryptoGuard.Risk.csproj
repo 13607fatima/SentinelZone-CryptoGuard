@@ -1,0 +1,1 @@
+<Project Sdk="Microsoft.NET.Sdk"><ItemGroup><ProjectReference Include="../CryptoGuard.Contracts/CryptoGuard.Contracts.csproj"/><ProjectReference Include="../CryptoGuard.Core/CryptoGuard.Core.csproj"/><ProjectReference Include="../CryptoGuard.ML/CryptoGuard.ML.csproj"/></ItemGroup></Project>

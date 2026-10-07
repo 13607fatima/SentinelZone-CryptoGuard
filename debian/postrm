@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+#DEBHELPER#
+if [ "$1" = purge ]; then
+    # Package-owned state only. Remove retains it; purge intentionally removes it.
+    if [ -L /var/lib/cryptoguard ]; then
+        rm -- /var/lib/cryptoguard
+    elif [ -d /var/lib/cryptoguard ]; then
+        rm -rf -- /var/lib/cryptoguard
+    fi
+fi

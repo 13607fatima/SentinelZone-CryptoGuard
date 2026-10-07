@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "passed": 4,
+  "failed": 0,
+  "telemetry_events_validated": 226,
+  "event_types": [
+    "health",
+    "inventory",
+    "risk",
+    "telemetry"
+  ],
+  "risk_results_validated": 370,
+  "feature_records_validated": 37,
+  "tests": [
+    "strict telemetry schema against both native live exports and canonical fixtures",
+    "strict risk schema against 370 native replay results",
+    "dataset collector 22-feature schema and no raw process identity/path",
+    "sample telemetry/risk/health schemas"
+  ]
+}

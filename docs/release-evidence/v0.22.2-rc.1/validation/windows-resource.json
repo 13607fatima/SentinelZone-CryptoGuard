@@ -1,0 +1,13 @@
+﻿{
+    "droppedEventsDelta":  0,
+    "soak72h":  "UNVERIFIED",
+    "durationSeconds":  180.4487809,
+    "collectorErrors":  [
+
+                        ],
+    "meanCpu":  0.19898764210218717,
+    "spoolGrowthBytes":  243332,
+    "maxMemoryMiB":  105.4765625,
+    "scope":  "Installed main service and live helpers, sampled every five seconds; very short children may be missed",
+    "p95Cpu":  0.93427147543320432
+}

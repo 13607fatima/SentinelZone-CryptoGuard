@@ -1,0 +1,66 @@
+{
+  "windows_legacy": {
+    "passed": 72,
+    "failed": 0,
+    "skipped": 0
+  },
+  "linux_legacy": {
+    "passed": 63,
+    "failed": 0,
+    "skipped": 0
+  },
+  "unified_windows": {
+    "passed": 59,
+    "failed": 0,
+    "skipped": 0
+  },
+  "unified_linux": {
+    "passed": 59,
+    "failed": 0,
+    "skipped": 0
+  },
+  "windows_migration_config": {
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0
+  },
+  "ml_runtime_each_os": {
+    "passed": 15,
+    "failed": 0,
+    "note": "Subset of 59 unified tests, not additional unique tests."
+  },
+  "ml_training": {
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0
+  },
+  "native_parity": {
+    "passed": 10,
+    "failed": 0,
+    "rows_compared": 370
+  },
+  "packaging_vm": {
+    "passed": 35,
+    "failed": 0,
+    "skipped": 0
+  },
+  "schema": {
+    "passed": 4,
+    "failed": 0
+  },
+  "acceptance": {
+    "PASS": 55,
+    "FAIL": 0,
+    "UNVERIFIED": 17,
+    "NOT APPLICABLE": 2
+  },
+  "artifact_verification": {
+    "passed": 9,
+    "failed": 0
+  },
+  "soak_runner_smoke": {
+    "windows": "PASS (approximately 20 seconds only)",
+    "linux": "PASS (approximately 20 seconds only)",
+    "72h": "UNVERIFIED"
+  }
+}

@@ -1,0 +1,6 @@
+ARG BASE=docker.io/library/ubuntu:22.04
+FROM ${BASE}
+ENV DEBIAN_FRONTEND=noninteractive container=podman
+RUN apt-get update && apt-get install -y --no-install-recommends systemd-sysv python3 util-linux ca-certificates && rm -rf /var/lib/apt/lists/* && rm -f /usr/sbin/policy-rc.d
+STOPSIGNAL SIGRTMIN+3
+CMD ["/sbin/init"]

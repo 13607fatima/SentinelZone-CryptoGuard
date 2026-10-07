@@ -1,0 +1,352 @@
+{
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "confusion_matrix": [
+    [
+      80,
+      0
+    ],
+    [
+      0,
+      80
+    ]
+  ],
+  "false_positive_rate": 0.0,
+  "normal_samples": 80,
+  "positive_samples": 80,
+  "group_cross_validation": {
+    "test_precision": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "test_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "test_f1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "assessment_source": "heuristic",
+  "mode": "shadow",
+  "dataset_contains_fixtures": true,
+  "production_acceptance": "UNVERIFIED",
+  "promotion_allowed": false,
+  "train_hosts": [
+    "explicit-fixture-host-0",
+    "explicit-fixture-host-2",
+    "explicit-fixture-host-3",
+    "explicit-fixture-host-4",
+    "explicit-fixture-host-6",
+    "explicit-fixture-host-7"
+  ],
+  "test_hosts": [
+    "explicit-fixture-host-1",
+    "explicit-fixture-host-5"
+  ],
+  "train_sessions": [
+    "explicit-fixture-host-0/29dcb372-43af-524e-b56d-2870f1005441",
+    "explicit-fixture-host-0/3a961c22-36a1-5666-83fc-f005661fba98",
+    "explicit-fixture-host-0/473fff6a-dc69-5e40-8cbb-4c2169bbe1e4",
+    "explicit-fixture-host-0/e2b7a133-5f1a-5b7e-85a4-22f2b2122056",
+    "explicit-fixture-host-2/0aa431b9-fdf5-5c0a-8a1f-255fe6a3b9b4",
+    "explicit-fixture-host-2/6ca0c5be-db5b-52cf-affd-f7ff56fae8d7",
+    "explicit-fixture-host-2/a18985eb-6fba-5e9e-9465-9e05753edc62",
+    "explicit-fixture-host-2/f7bae0f0-dbb2-59ca-a1ac-7bf0cfe04059",
+    "explicit-fixture-host-3/17fd2101-b683-5e0a-a14d-898b88f26c5f",
+    "explicit-fixture-host-3/470afacb-f28c-5e9b-bccd-b4ed4ad086c3",
+    "explicit-fixture-host-3/65e4592f-18d9-5acb-b4a1-68d303cc16a1",
+    "explicit-fixture-host-3/6a69430c-73e5-567c-b08d-fc5fcefdaf65",
+    "explicit-fixture-host-4/5812ae67-2c54-5f15-81e9-c36f5f7c8a95",
+    "explicit-fixture-host-4/df2f9528-6640-5cdd-bbc4-5d9127b26b42",
+    "explicit-fixture-host-4/e20b9c2a-6070-5299-bf4b-bcb27ec78b9b",
+    "explicit-fixture-host-4/ebe87e16-5906-5c1c-a6a3-ae40dcf43780",
+    "explicit-fixture-host-6/326d4a89-2038-5d0f-bb24-cac57657a7ad",
+    "explicit-fixture-host-6/3db3a508-3565-521e-a715-a3ce2497997c",
+    "explicit-fixture-host-6/d7c2098b-5993-5c3e-89a0-a1f979d1f6da",
+    "explicit-fixture-host-6/f442ba7c-e39c-56f0-a88c-47e74ddece49",
+    "explicit-fixture-host-7/1ff32642-5691-5300-b2de-c0db7337041a",
+    "explicit-fixture-host-7/4a80556a-867f-50f0-9152-172014ac1447",
+    "explicit-fixture-host-7/5413bad9-2174-5236-88cd-c1387f0fc695",
+    "explicit-fixture-host-7/a1adcaab-eca0-59c7-9454-bce15960d990"
+  ],
+  "test_sessions": [
+    "explicit-fixture-host-1/2f60feda-b633-5b26-b258-4bfddb58c05f",
+    "explicit-fixture-host-1/4a8ebb42-7af7-59a5-84d6-3966a4cee6c1",
+    "explicit-fixture-host-1/9f57233d-1ad8-55f4-be87-ae2bbe27da2d",
+    "explicit-fixture-host-1/e626ad25-b9bc-56e3-9c83-1b9a1fcf1652",
+    "explicit-fixture-host-5/04b068ae-b8b9-5b47-93b3-caf468554a57",
+    "explicit-fixture-host-5/2083314a-bb7a-5ad9-9ed3-4929fdfaffd0",
+    "explicit-fixture-host-5/562fdb33-16c5-5817-a4a1-7b6ae2cc67d4",
+    "explicit-fixture-host-5/fe9ddd4e-4697-5d31-97fc-fe88069c95d9"
+  ],
+  "train_rows": 480,
+  "test_rows": 160,
+  "score_semantics": "mean suspicious-class leaf fraction; not malware probability",
+  "shadow_runtime_tests": {
+    "windows": {
+      "passed": 15,
+      "failed": 0,
+      "tests": [
+        {
+          "name": "feature_contract_has_22_unique_named_units",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_missing_features_are_null",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_model_hash_verification",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_model_rejects_cycles",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_shadow_cannot_raise_security_or_confirm",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_insufficient_coverage_abstains",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_invalid_model_does_not_stop_heuristic",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_extra_feature_does_not_change_prediction",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_bad_json_rejected_without_execution",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_unsupported_format_version_rejected",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_wrong_feature_contract_version_rejected",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_windows_linux_vector_prediction_equal",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_null_trees_fails_safe",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_null_feature_names_fails_safe",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_null_training_medians_fails_safe",
+          "area": "ml",
+          "status": "PASS"
+        }
+      ]
+    },
+    "linux": {
+      "passed": 15,
+      "failed": 0,
+      "tests": [
+        {
+          "name": "feature_contract_has_22_unique_named_units",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_missing_features_are_null",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_model_hash_verification",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_model_rejects_cycles",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_shadow_cannot_raise_security_or_confirm",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_insufficient_coverage_abstains",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_invalid_model_does_not_stop_heuristic",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_extra_feature_does_not_change_prediction",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_bad_json_rejected_without_execution",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_unsupported_format_version_rejected",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_wrong_feature_contract_version_rejected",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_windows_linux_vector_prediction_equal",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_null_trees_fails_safe",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_null_feature_names_fails_safe",
+          "area": "ml",
+          "status": "PASS"
+        },
+        {
+          "name": "ml_null_training_medians_fails_safe",
+          "area": "ml",
+          "status": "PASS"
+        }
+      ]
+    }
+  },
+  "training_methodology_tests": {
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0,
+    "tests": [
+      {
+        "name": "test_training.TrainingTests.test_confusion_and_fpr",
+        "status": "PASS"
+      },
+      {
+        "name": "test_training.TrainingTests.test_host_and_session_disjoint",
+        "status": "PASS"
+      },
+      {
+        "name": "test_training.TrainingTests.test_inconsistent_session_label_rejected",
+        "status": "PASS"
+      },
+      {
+        "name": "test_training.TrainingTests.test_portable_export_matches_sklearn",
+        "status": "PASS"
+      },
+      {
+        "name": "test_training.TrainingTests.test_single_host_rejected",
+        "status": "PASS"
+      },
+      {
+        "name": "test_training.TrainingTests.test_train_only_imputation",
+        "status": "PASS"
+      }
+    ],
+    "scope": "Training methodology only, synthetic unit fixtures; not detection accuracy"
+  },
+  "native_parity": {
+    "passed": 10,
+    "failed": 0,
+    "tests": [
+      {
+        "name": "high-cpu-benign-heuristic.jsonl",
+        "status": "PASS",
+        "rows": 37
+      },
+      {
+        "name": "high-cpu-benign-shadow.jsonl",
+        "status": "PASS",
+        "rows": 37
+      },
+      {
+        "name": "mining-like-heuristic.jsonl",
+        "status": "PASS",
+        "rows": 37
+      },
+      {
+        "name": "mining-like-shadow.jsonl",
+        "status": "PASS",
+        "rows": 37
+      },
+      {
+        "name": "missing-gpu-heuristic.jsonl",
+        "status": "PASS",
+        "rows": 37
+      },
+      {
+        "name": "missing-gpu-shadow.jsonl",
+        "status": "PASS",
+        "rows": 37
+      },
+      {
+        "name": "normal-browser-heuristic.jsonl",
+        "status": "PASS",
+        "rows": 37
+      },
+      {
+        "name": "normal-browser-shadow.jsonl",
+        "status": "PASS",
+        "rows": 37
+      },
+      {
+        "name": "persistence-plus-network-heuristic.jsonl",
+        "status": "PASS",
+        "rows": 37
+      },
+      {
+        "name": "persistence-plus-network-shadow.jsonl",
+        "status": "PASS",
+        "rows": 37
+      }
+    ],
+    "scope": "Entire normalized risk result; evidence, ML, coverage and lifecycle included"
+  },
+  "release_model_default": "disabled; no validated production model",
+  "real_world_detection_quality": "UNVERIFIED"
+}

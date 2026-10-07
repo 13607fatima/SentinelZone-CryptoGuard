@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "Only the temporary key for this release test",
+  "key_comment": "cryptoguard-0222-test-20261006",
+  "targets": {
+    "windows": {
+      "status": "PASS",
+      "fresh_ssh_authentication_denied": true,
+      "ssh_exit_code": 255,
+      "removed_count": null,
+      "note": "Removal and per-file content/ACL checks completed before the initial script failed while formatting its final count. A separate new SSH attempt confirms this key no longer authenticates. No new key was added."
+    },
+    "linux": {
+      "status": "PASS",
+      "removal": {
+        "removed": 1,
+        "remaining_target_entries": 0,
+        "other_entries_preserved": true
+      },
+      "fresh_ssh_authentication_denied": true,
+      "ssh_exit_code": 255
+    }
+  },
+  "local_private_key_removed": true,
+  "local_public_key_removed": true,
+  "completed_at": "2026-10-06T08:43:38.871540+00:00"
+}

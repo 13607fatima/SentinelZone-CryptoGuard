@@ -1,0 +1,10 @@
+{
+  "state_directory":"/var/lib/cryptoguard",
+  "collector_socket":"/run/cryptoguard/collector.sock",
+  "sample_seconds":5,"network_seconds":10,"sensor_seconds":10,
+  "inventory_seconds":900,"export_seconds":60,"persistence_seconds":900,
+  "spool_limit_bytes":268435456,"risk_reserve_bytes":33554432,"retention_hours":168,
+  "include_hostname":false,"max_processes":8192,
+  "confirm_seconds":60,"resolve_seconds":60,"high_cpu_percent_host_capacity":15,
+  "mining_authorization":"unknown","iocs":[],"authorized_workloads":[]
+}

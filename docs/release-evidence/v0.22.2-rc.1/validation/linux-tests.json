@@ -1,0 +1,260 @@
+{
+  "passed": 63,
+  "failed": 0,
+  "skipped": 0,
+  "scope": "Preserved legacy regression suite executed on actual VM",
+  "tests": [
+    {
+      "name": "CPU multi-core normalization",
+      "status": "PASS"
+    },
+    {
+      "name": "CPU one full core on four CPU host",
+      "status": "PASS"
+    },
+    {
+      "name": "CPU reset produces unknown",
+      "status": "PASS"
+    },
+    {
+      "name": "CPU invalid elapsed produces unknown",
+      "status": "PASS"
+    },
+    {
+      "name": "proc stat embedded parentheses",
+      "status": "PASS"
+    },
+    {
+      "name": "TCP IPv4 endian and port",
+      "status": "PASS"
+    },
+    {
+      "name": "TCP IPv6 word endian",
+      "status": "PASS"
+    },
+    {
+      "name": "quoted persistence executable",
+      "status": "PASS"
+    },
+    {
+      "name": "persistence shell expression never executed",
+      "status": "PASS"
+    },
+    {
+      "name": "privacy --password",
+      "status": "PASS"
+    },
+    {
+      "name": "privacy --token",
+      "status": "PASS"
+    },
+    {
+      "name": "privacy postgres://user:secret@host/db",
+      "status": "PASS"
+    },
+    {
+      "name": "privacy Password",
+      "status": "PASS"
+    },
+    {
+      "name": "privacy Bearer",
+      "status": "PASS"
+    },
+    {
+      "name": "privacy --unknown-secret",
+      "status": "PASS"
+    },
+    {
+      "name": "privacy \"quoted",
+      "status": "PASS"
+    },
+    {
+      "name": "mining args combination",
+      "status": "PASS"
+    },
+    {
+      "name": "single mining word insufficient",
+      "status": "PASS"
+    },
+    {
+      "name": "all normal compute scenarios stay low",
+      "status": "PASS"
+    },
+    {
+      "name": "warmup unknown is not zero or threat",
+      "status": "PASS"
+    },
+    {
+      "name": "port-only match insufficient",
+      "status": "PASS"
+    },
+    {
+      "name": "offline renamed miner real-time lifecycle",
+      "status": "PASS"
+    },
+    {
+      "name": "rapid scans cannot shortcut confirmation",
+      "status": "PASS"
+    },
+    {
+      "name": "sampling gap resets sustained suspicion",
+      "status": "PASS"
+    },
+    {
+      "name": "PID reuse does not inherit history",
+      "status": "PASS"
+    },
+    {
+      "name": "alert resolves using elapsed time",
+      "status": "PASS"
+    },
+    {
+      "name": "missing process resolves alert",
+      "status": "PASS"
+    },
+    {
+      "name": "trusted malicious hash separate high rule",
+      "status": "PASS"
+    },
+    {
+      "name": "expired IOC is ignored",
+      "status": "PASS"
+    },
+    {
+      "name": "low CPU plus trusted process IOC still scores",
+      "status": "PASS"
+    },
+    {
+      "name": "allowlist requires exact hash and path",
+      "status": "PASS"
+    },
+    {
+      "name": "package trust never erases evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "persistent lifecycle replay checkpoint",
+      "status": "PASS"
+    },
+    {
+      "name": "identity survives reopen and unique fresh install",
+      "status": "PASS"
+    },
+    {
+      "name": "spool exclusive writer",
+      "status": "PASS"
+    },
+    {
+      "name": "unacknowledged retry preserves event uid",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate durable append idempotent",
+      "status": "PASS"
+    },
+    {
+      "name": "partial crash write recovered with visible loss",
+      "status": "PASS"
+    },
+    {
+      "name": "corrupt committed write detected",
+      "status": "PASS"
+    },
+    {
+      "name": "risk reserve and explicit quota loss",
+      "status": "PASS"
+    },
+    {
+      "name": "retention loss explicitly counted",
+      "status": "PASS"
+    },
+    {
+      "name": "backoff exponential bounded and jittered",
+      "status": "PASS"
+    },
+    {
+      "name": "source generated JSON round trip",
+      "status": "PASS"
+    },
+    {
+      "name": "configuration rejects unsafe allowlist",
+      "status": "PASS"
+    },
+    {
+      "name": "IPv6 IOC canonicalization",
+      "status": "PASS"
+    },
+    {
+      "name": "disabled persistence does not score",
+      "status": "PASS"
+    },
+    {
+      "name": "IO failure is not acknowledged as durable",
+      "status": "PASS"
+    },
+    {
+      "name": "cron system command keeps equals arguments",
+      "status": "PASS"
+    },
+    {
+      "name": "cron per-user and reboot keep equals arguments",
+      "status": "PASS"
+    },
+    {
+      "name": "cron environment and comments are not commands",
+      "status": "PASS"
+    },
+    {
+      "name": "cron preserves quoted command whitespace",
+      "status": "PASS"
+    },
+    {
+      "name": "deferred confirmed transition survives quota and restart",
+      "status": "PASS"
+    },
+    {
+      "name": "deferred resolved transition survives quota and restart",
+      "status": "PASS"
+    },
+    {
+      "name": "pending transition cannot be overwritten",
+      "status": "PASS"
+    },
+    {
+      "name": "checkpoint restoration does not alias live engine state",
+      "status": "PASS"
+    },
+    {
+      "name": "checkpoint IO failure stops commit before spool append",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy risk state migrates without changing lifecycle",
+      "status": "PASS"
+    },
+    {
+      "name": "directory fsync retry is required before duplicate ACK",
+      "status": "PASS"
+    },
+    {
+      "name": "indexed spool bytes survive ACK and recovery",
+      "status": "PASS"
+    },
+    {
+      "name": "retention handles non-sequential observed times",
+      "status": "PASS"
+    },
+    {
+      "name": "intentional idle delay emits repeated watchdog heartbeats",
+      "status": "PASS"
+    },
+    {
+      "name": "retention frees a blocked outbox without new collection",
+      "status": "PASS"
+    },
+    {
+      "name": "heartbeat delay cancels promptly",
+      "status": "PASS"
+    }
+  ]
+}

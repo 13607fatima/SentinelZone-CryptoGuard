@@ -1,0 +1,12 @@
+SentinelZone CryptoGuard 0.22.2-rc.1 - local evaluation build
+
+This installer registers a LocalService Windows service with automatic startup and recovery.
+An interactive-session helper starts at the next user login to report idle time over a local ACL-protected pipe.
+No backend connection is configured. No processes are killed. No sensor driver is installed.
+Hardware monitoring is disabled by default. Optional hardware libraries remain replaceable in the hardware directory.
+
+This build is unsigned and has not passed the full 72-hour, multi-VM or detection-accuracy release acceptance matrix.
+Use a VM snapshot for installer, reboot, upgrade and uninstall acceptance tests.
+
+Uninstall retains ProgramData\SentinelZone\CryptoGuard (identity, configuration and collected data).
+Release signing and completed acceptance reports are required before production distribution.

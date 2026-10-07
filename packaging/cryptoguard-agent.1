@@ -1,0 +1,60 @@
+.TH CRYPTOGUARD-AGENT 1 "October 2026" "0.22.1" "User Commands"
+.SH NAME
+cryptoguard-agent \- local Linux telemetry and explainable mining-risk assessment
+.SH SYNOPSIS
+.B cryptoguard-agent
+.I command
+.RI [ options ]
+.SH DESCRIPTION
+Collects Linux host, process, network, persistence and available sensor information.
+Writes private local events. No process response actions or backend transport are enabled.
+.SH COMMANDS
+.TP
+.B doctor
+Report capabilities available to the invoking user. Does not create agent state.
+.TP
+.B run --mode standalone
+Run with a separate child collector and private local state.
+.TP
+.B run --mode service
+Run using the restricted systemd collector socket.
+.TP
+.B export
+Write durable events as JSONL without deleting them. May run while the service runs.
+.TP
+.B replay FILE
+Evaluate a complete normalized sample sequence using the deterministic risk engine.
+.TP
+.B validate FILE
+Check event envelopes and null/status consistency. Full JSON Schema validation is separate.
+.SH OPTIONS
+.TP
+.B --config FILE
+Use the specified configuration; default /etc/cryptoguard/agent.json when present.
+.TP
+.B --state DIRECTORY
+Override the state directory. Portable users should select a writable private directory.
+.TP
+.B --output FILE
+Create an export/replay output file. Existing files are not overwritten.
+.TP
+.B --samples COUNT
+Limit run to a specified number of samples, primarily for diagnostics.
+.SH FILES
+.I /etc/cryptoguard/agent.json
+contains configuration and local policy.
+.I /var/lib/cryptoguard
+contains identity, spool and lifecycle state.
+.SH PRIVACY
+Argument values and unknown flags are discarded before IPC or persistence.
+Hostname is redacted by default. Paths and remote IPs remain operational evidence.
+.SH LIFECYCLE
+SIGTERM and SIGINT request orderly shutdown. Remove preserves configuration and
+state. Purge deletes /var/lib/cryptoguard including identity, events and exports.
+.SH LIMITATIONS
+Missing sensors produce null/status values. Snapshot process discovery can miss
+short-lived processes. Device GPU metrics are not process GPU attribution.
+This candidate has uncalibrated detection rules; see the acceptance report.
+.SH SEE ALSO
+.BR systemctl (1),
+.BR dpkg (1)

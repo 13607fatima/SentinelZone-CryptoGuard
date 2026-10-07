@@ -1,0 +1,21 @@
+{
+  "duration_seconds": 180.3961771119998,
+  "cpu_mean": 0.574450460327445,
+  "cpu_p95": 2.0440173932901775,
+  "rss_peak_bytes": 98230272,
+  "spool_growth_bytes": 2265945,
+  "dropped_events_delta": 0,
+  "collector_errors": [
+    {
+      "collector": "process",
+      "status": "temporarily_unavailable",
+      "code": "IOException"
+    }
+  ],
+  "service_restarts": {
+    "cryptoguard-agent": 0,
+    "cryptoguard-collector": 0
+  },
+  "scope": "Core, collector and live descendants sampled every 5 seconds; short-lived child CPU may be missed",
+  "soak72h": "UNVERIFIED"
+}

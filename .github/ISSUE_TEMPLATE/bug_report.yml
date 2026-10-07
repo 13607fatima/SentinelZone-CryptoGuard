@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a reproducible, sanitized defect.
+body:
+  - type: markdown
+    attributes:
+      value: "For security vulnerabilities follow SECURITY.md. Do not upload secrets, spool/state data or raw endpoint exports."
+  - type: textarea
+    id: environment
+    attributes:
+      label: Version and environment
+      description: Agent version, commit, OS/build, package type and relevant sensor availability.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction and expected/actual behavior
+      description: Prefer a minimal synthetic input. State whether the result is reproducible.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence and test scope
+      description: Include reason/status codes and checksums where relevant; distinguish missing data from zero.

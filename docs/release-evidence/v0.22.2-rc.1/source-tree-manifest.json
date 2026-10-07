@@ -1,0 +1,982 @@
+[
+  {
+    "path": ".gitattributes",
+    "sha256": "a2345fa22993fa5e48da309ccbc470cb3f36b849cd3f8566761e8f08064853a5"
+  },
+  {
+    "path": ".github/workflows/ci.yml",
+    "sha256": "a9dc45f1fbd07510fa4a45677cd0a234d4aceeedeb00dfe6d05a7482df74e0b6"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "b6b2c8bd7fa8b19fd69133ad8f33f0d8909bf50cd16737186f5b9595680d778f"
+  },
+  {
+    "path": "ARCHITECTURE.md",
+    "sha256": "54a01dc284139021b67ed1aa66d9c76c311e5594ae7c2150cb01ca0e1fc3a7c6"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "sha256": "86806f542e76c4eadd77e974d55b7486836ba32c4425576d70eba712d893217a"
+  },
+  {
+    "path": "contracts/ml-features.json",
+    "sha256": "803d98042acca63ff372cc7b3e25f006a038bbeccdb1c697d2bd61eb60a94464"
+  },
+  {
+    "path": "contracts/ml-features.schema.json",
+    "sha256": "d1c24b1e9f200e9a6786beaf30aab71462fc0d5a5875690b28eeb99bada8ac80"
+  },
+  {
+    "path": "contracts/replay/high-cpu-benign.jsonl",
+    "sha256": "a620675ca7f785b1aa153120d2800c607a6c36c984ba914bd7a170befc57fe88"
+  },
+  {
+    "path": "contracts/replay/mining-like.jsonl",
+    "sha256": "8dd5c214ec29cd9e64790256ecf37312a7b01f1d8e4934ee7825a782c47e31e5"
+  },
+  {
+    "path": "contracts/replay/missing-gpu.jsonl",
+    "sha256": "a620675ca7f785b1aa153120d2800c607a6c36c984ba914bd7a170befc57fe88"
+  },
+  {
+    "path": "contracts/replay/normal-browser.jsonl",
+    "sha256": "a0000e3f99a88804a9ba6ae4870fc137e6d60a32ebbbe84eea20b15860d82c12"
+  },
+  {
+    "path": "contracts/replay/persistence-plus-network.jsonl",
+    "sha256": "9498024650d323e5d9517665fb2f4920f6d967ec9503aa408265e0971a915c4f"
+  },
+  {
+    "path": "contracts/risk.schema.json",
+    "sha256": "9ba2021e50641ebce647b64f78ebaaa4bc64bf5b5ed833391c457960380e3ee9"
+  },
+  {
+    "path": "contracts/sample-events/health.json",
+    "sha256": "0b8fd385a1f8836cefa6dc4fee083ae9c4b0606c16d59e6e75cd8a593dfe6fc6"
+  },
+  {
+    "path": "contracts/sample-events/risk.json",
+    "sha256": "00f38c1bb025416892a2a8da23ddd1de8b7d40cfe380671961314cd768334d0e"
+  },
+  {
+    "path": "contracts/sample-events/telemetry.json",
+    "sha256": "860446f2bb2cfdfa0df1baa22f25fe54a81f0cd71f2fed951a8986a2deb8ccaf"
+  },
+  {
+    "path": "contracts/telemetry.schema.json",
+    "sha256": "99895ac0741d9a6ec38b84bc4cd75724ecd948e87631bc5787318f2cdf7a673b"
+  },
+  {
+    "path": "debian/changelog",
+    "sha256": "4021d750f85dba01a15f82f58bdf58a2cc79652b21ae179aa29e804fa01ca56c"
+  },
+  {
+    "path": "debian/control",
+    "sha256": "bf41aabbe956a1fdf441cb939c2445535f41da87e3936a63fbb4e196dd04842e"
+  },
+  {
+    "path": "debian/copyright",
+    "sha256": "0830aa226fe3cc3751ca678a48bbc00fffaf97ea7303b6d84b4e8a8fcb6992ff"
+  },
+  {
+    "path": "debian/cryptoguard-agent.cryptoguard-collector.service",
+    "sha256": "183558e71281daf6d95536a19c23e354850b0a10d86d79d701c6322b2432e00f"
+  },
+  {
+    "path": "debian/cryptoguard-agent.docs",
+    "sha256": "fc596b6b83e0309b5da3a422b8db705a5e0d7f2b54b9e87e718972fa7b0a4488"
+  },
+  {
+    "path": "debian/cryptoguard-agent.install",
+    "sha256": "6c5824c8184343c1093ae6a3fa1fa9204e0a988895df6aae0010c8043389ab5c"
+  },
+  {
+    "path": "debian/cryptoguard-agent.links",
+    "sha256": "f8550ead5e739b812fd06fceb3e2d478a84b217d2297541edbecaea3172dddc3"
+  },
+  {
+    "path": "debian/cryptoguard-agent.manpages",
+    "sha256": "53efdefcbc1c64c3c20f3fe3723e8b2479fe55722feba5e3111ed85e6eae9725"
+  },
+  {
+    "path": "debian/cryptoguard-agent.service",
+    "sha256": "792fe7628121fe8234aab92d50b240c6f2ea10727963b38eef508437b3907e6b"
+  },
+  {
+    "path": "debian/postinst",
+    "sha256": "b781649f8fcdfd85bfc9c55a1ff7c2809531b6a4e122a08e98c6adc8043559d9"
+  },
+  {
+    "path": "debian/postrm",
+    "sha256": "0185713bbe435782ba01ae2b838e0bf80039ffcc4891a07ebadd631485b7bb9a"
+  },
+  {
+    "path": "debian/rules",
+    "sha256": "52a72feec74d2500361ce5955c66a6be3dbf5c71d6fa21116a86ac30b32415a0"
+  },
+  {
+    "path": "debian/source/format",
+    "sha256": "1be7080d72e6b566df3e236ce2c55efdfbbb8fa1c972d825e5b672ff8773be1a"
+  },
+  {
+    "path": "Directory.Build.props",
+    "sha256": "9d730cda37acdbb31bbdb88bd16d0705d2cf4fe11ea9051031f38c408aaaebcb"
+  },
+  {
+    "path": "docs/ACCEPTANCE.md",
+    "sha256": "4d80765626315bd636eb4ba7d5804dd756ee172dc624aae18a7fd4cd6ff40a04"
+  },
+  {
+    "path": "docs/ARCHITECTURE.md",
+    "sha256": "54a01dc284139021b67ed1aa66d9c76c311e5594ae7c2150cb01ca0e1fc3a7c6"
+  },
+  {
+    "path": "docs/BUG-STATUS.md",
+    "sha256": "33d5d94389d161482c0ac835b2b8ce06f130347c60b76fc45ed1e234d0857906"
+  },
+  {
+    "path": "docs/CHANGED-FILES.md",
+    "sha256": "c269140641065a596b2a37f66565f6788b992b102e4552cf243b131b48c4d9cd"
+  },
+  {
+    "path": "docs/CHANGELOG.md",
+    "sha256": "86806f542e76c4eadd77e974d55b7486836ba32c4425576d70eba712d893217a"
+  },
+  {
+    "path": "docs/CHAYESH-FEATURE-AUDIT.md",
+    "sha256": "1541ebd32da17af30ca20365f7ce53dc2f4ea1d5925962d80c579126196f448f"
+  },
+  {
+    "path": "docs/contract.md",
+    "sha256": "606b7822aeb2049503c990ecfc956b9c8c8c71a3ff72615de31442121c0f32c3"
+  },
+  {
+    "path": "docs/DETECTION-EVALUATION.md",
+    "sha256": "a868197a492af241e600965cff9ea5f3433d1b0bc01762171c9a8e8075b0b4d2"
+  },
+  {
+    "path": "docs/HESABAT.md",
+    "sha256": "a5a305ddae5a9bfe615dee30e28804d99d86b4c1c2af96ab77a192a620878d1e"
+  },
+  {
+    "path": "docs/history/Linux-0.22.1-acceptance.md",
+    "sha256": "73c1e722aeb0b1d0e4655b1e008d8ba4e52b382a81590ba27b79bd074001f26d"
+  },
+  {
+    "path": "docs/history/linux-0.22.1-source-manifest.json",
+    "sha256": "2c6ba6a86d30508755a576803b85d0c59f28cff572f998e5c2e3cb918be0b8e9"
+  },
+  {
+    "path": "docs/history/windows-alpha.3-source-manifest.json",
+    "sha256": "666cbe4a0d3df032499077dd3a27ad3ee466e579c8c806e8123e1832df7ea570"
+  },
+  {
+    "path": "docs/KNOWN-LIMITATIONS.md",
+    "sha256": "9506b8c1eb45690470aeedfca21a59b33d48370f6a014f6cba6bb7022aa48f00"
+  },
+  {
+    "path": "docs/LINUX-INSTALL.md",
+    "sha256": "c458db17e2dd84615b17cb7203e00d2feb2d4ce479f4061167246a14d081893b"
+  },
+  {
+    "path": "docs/ML-EVALUATION.md",
+    "sha256": "27f6b253361a6c89fcedd0bd0324530c8e1c7e4b159e9003de8db559588e49d5"
+  },
+  {
+    "path": "docs/ML-MODEL.md",
+    "sha256": "70cb4cbb3292e39aa7db58e83002bf5943dd9d079ebdd5254face3d58ca5c483"
+  },
+  {
+    "path": "docs/PHASE23-HANDOFF.md",
+    "sha256": "2d8750056f5a471ab653e9cb303ce5b21cb72423586728119fd0127fde798e3e"
+  },
+  {
+    "path": "docs/PRIVACY.md",
+    "sha256": "a2f613052f0ab94a1b5568e95ceb73f8462ad100e428fe029572995c6de10637"
+  },
+  {
+    "path": "docs/RELEASE.md",
+    "sha256": "ccf23fe389b713ca3b40b9919b8f1759569a80d9734dd1395d1588226f501f31"
+  },
+  {
+    "path": "docs/RESEARCH-SOURCES.md",
+    "sha256": "931cb0b9eb8301f8cd9aa16f1ce67d55349be6eed731ea0952dcbd5e608e1593"
+  },
+  {
+    "path": "docs/RISK-ENGINE.md",
+    "sha256": "ec3778d0e9f39e36db02ff0a9ae66ef158ef162b000f13106393802f7062cfdb"
+  },
+  {
+    "path": "docs/SOAK-AND-REBOOT.md",
+    "sha256": "5c3606f8a8b21648a8aed61e22247a456982be9c972a18afedc09151d8d5e0c9"
+  },
+  {
+    "path": "docs/sources.md",
+    "sha256": "85c97b02ff4ddfe97ddfae6c169cfb79d3292289e7d0daf0ec22491f99d35b85"
+  },
+  {
+    "path": "docs/TELEMETRY-CONTRACT.md",
+    "sha256": "5f15606aabdf59cbd7cba5d99cedac7666824edf601f199eeeed57bcf1475f4b"
+  },
+  {
+    "path": "docs/TESTING.md",
+    "sha256": "6a3b4d29d8ffec6fdc151699108a1af0566cb6e6bcc663a4d1237024d27ff64f"
+  },
+  {
+    "path": "docs/WINDOWS-INSTALL.md",
+    "sha256": "72b8badb101b4f13284265ccfec5cc3f38f3a2f761d6e9dd97fdbe524f7c8e63"
+  },
+  {
+    "path": "global.json",
+    "sha256": "289e45aafd6eb59adcc4b7dda4d6fe5f1924065345aa8ab75be4a0c2b9cb00db"
+  },
+  {
+    "path": "licenses/Chayesh-MIT-reference.txt",
+    "sha256": "fe3c293ce41c96054f823aa4af713021e26c47d4e14f66bd51682c882dcb8f58"
+  },
+  {
+    "path": "licenses/dotnet-LICENSE.txt",
+    "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310"
+  },
+  {
+    "path": "licenses/dotnet-THIRD-PARTY-NOTICES.txt",
+    "sha256": "66f1d4e44973185519bb4aa8a9718eb22fc7af2cc532e3ae9cfc4c127ee7fc54"
+  },
+  {
+    "path": "licenses/Mono.Posix.NETStandard-license.html",
+    "sha256": "b27729a66f1f001a1a0482c0b72d0176478d364889ecd288a7d217e0cfe9ba1f"
+  },
+  {
+    "path": "licenses/Mono.Posix.NETStandard-MIT.txt",
+    "sha256": "844242559dbdb96cb9cbe103b06c2bc8a349f19ad0b89d5c3cf830a8914333f6"
+  },
+  {
+    "path": "licenses/PawnIO-LGPL-2.1.txt",
+    "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+  },
+  {
+    "path": "licenses/PawnIO.Modules-0.1.6-origin.json",
+    "sha256": "1be62242e8358b7a4beef62737d527a4646cc9ff15632ebdb0d83ad6232541f0"
+  },
+  {
+    "path": "licenses/PawnIO.Modules-0.1.6-source.zip",
+    "sha256": "665b2f7a028f8a317bc35cd6fbf64986115909239019ff2d30d19260d7dd0982"
+  },
+  {
+    "path": "licenses/windows-alpha3/DOTNET-LICENSE.txt",
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "path": "licenses/windows-alpha3/DOTNET-THIRD-PARTY-NOTICES.txt",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "path": "licenses/windows-alpha3/LHM-LICENSE.txt",
+    "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+  },
+  {
+    "path": "licenses/windows-alpha3/LHM-THIRD-PARTY-NOTICES.txt",
+    "sha256": "a60d5ee62f4d700caff38566f42874d554b8b530437c72804fb28b958cfbda9b"
+  },
+  {
+    "path": "licenses/windows-alpha3/LibreHardwareMonitor-v0.9.6-source.zip",
+    "sha256": "28100b87fcd7a9a213c58fabe1174e4f3064975b5ab11799224766993ca1fbfc"
+  },
+  {
+    "path": "licenses/windows-alpha3/nuget-package-metadata.zip",
+    "sha256": "9b8e401e15e12dabdf0c9349f61fcfddd6a7d54a12df822f73830d776b4647a2"
+  },
+  {
+    "path": "NuGet.Config",
+    "sha256": "33aa39ee926a9e2651ae39549df08dddc8e43d11896cf14d0465bc869d56b4c2"
+  },
+  {
+    "path": "packaging/agent.json",
+    "sha256": "72c939c470e895e9db2014c323233dd1d2e9cd5742019b2321e60980d41b48f8"
+  },
+  {
+    "path": "packaging/Containerfile.lifecycle",
+    "sha256": "e71ca642372ee1296353808dc497b3cd39e5c2b488b1e7d8329cbde5e6ce4e53"
+  },
+  {
+    "path": "packaging/Containerfile.ubuntu22",
+    "sha256": "f94b47931464f2ae5ae092247627bbcd585b9ae02680e7993453f0fc3fd1d926"
+  },
+  {
+    "path": "packaging/cryptoguard-agent.1",
+    "sha256": "0acd8fe3fa68b4d4c92354cdeadaa5e601130b0db340d3a4eca98e1c6cca57d5"
+  },
+  {
+    "path": "packaging/debian/README.md",
+    "sha256": "fda82262cbb4ada97bb81c6287a2e109b703611ed2fc6fbfaef135556acac5d9"
+  },
+  {
+    "path": "packaging/windows/CryptoGuard.iss",
+    "sha256": "a01b899f1d338ee1255db483d88abf7c7771e6c0a57707ae567f48e28875d120"
+  },
+  {
+    "path": "packaging/windows/INSTALL-NOTES.txt",
+    "sha256": "69701fc2a384028982ee65d9cf24cbbd18070e136fee7bd2efb28612ac3e5e3d"
+  },
+  {
+    "path": "packaging/windows/Inventory.ps1",
+    "sha256": "5312dedeef0be6c84d797fd3657e49900bdef041feae308fa8dc0486587f2818"
+  },
+  {
+    "path": "packaging/windows/Manage-Service.ps1",
+    "sha256": "b24af5500df1851e0cb88bbc7b78d7681a957a888280efb6a0811324d54594e5"
+  },
+  {
+    "path": "packaging/windows/Package-Release.ps1",
+    "sha256": "28d627268f331bec554af89169c82bf712205e62f2d4c3248b54307ae86dea22"
+  },
+  {
+    "path": "packaging/windows/Prepare-Inno.ps1",
+    "sha256": "6a3b4ab3214645fed6e9df7c765dca82d2d2bbb91e45707aeb0f6ccf890f8bf7"
+  },
+  {
+    "path": "packaging/windows/Publish.ps1",
+    "sha256": "1b87084bf8f7d13b9d1531a6b9fe0840310db4d4f1c8194b10ec66094094f3b1"
+  },
+  {
+    "path": "packaging/windows/Sign-CI.ps1",
+    "sha256": "ca2e8cf71e9ea7729c39bb3db1bddc8da216b2ab519b5ef1516269fa966f70f6"
+  },
+  {
+    "path": "packaging/windows/Sign-Release.ps1",
+    "sha256": "e0b69124b0ad1f123341de9d3e8552f6c5ab7735ac17ab61fab70f32fc2a916b"
+  },
+  {
+    "path": "packaging/windows/Start-IdleHelper.ps1",
+    "sha256": "732bfa00a2583308c73d6b4b9a0fa26bef83c8ca18e0c49997abda08f1610eb0"
+  },
+  {
+    "path": "README.md",
+    "sha256": "4e43c531f3bcd623a4b5b7940617fe38f4aeb8d9705a27a6a8cd5d03c0fee275"
+  },
+  {
+    "path": "research/training/CryptoGuard.DatasetCollector/CryptoGuard.DatasetCollector.csproj",
+    "sha256": "ad3f906530024c2c7fcc5f9bfc914f9b1afa00c73adf285c6a8f88a068b4f261"
+  },
+  {
+    "path": "research/training/CryptoGuard.DatasetCollector/packages.portable.lock.json",
+    "sha256": "fcdaee10b043851a060961a919ca02345708c3b13152bf91cd3af9e0fc31c021"
+  },
+  {
+    "path": "research/training/CryptoGuard.DatasetCollector/Program.cs",
+    "sha256": "3c57838aa8c27de2f59ef2eb3e9dd75322dec284bba3f243263b564c7e9fa1a4"
+  },
+  {
+    "path": "research/training/make_pipeline_fixture.py",
+    "sha256": "cccaf190d454b35540259111f7218ca49325ce01823315b7682a510dc1e0f236"
+  },
+  {
+    "path": "research/training/requirements.txt",
+    "sha256": "957fbe9fd5a34d3ea5d6f651d08baf1fa30a35a87494ce382201af11660208a5"
+  },
+  {
+    "path": "research/training/test_training.py",
+    "sha256": "1c822fbdde8d7a81ff5d9da59ae1ea5530d561f3525b1a9f4bcbd77446dd8c64"
+  },
+  {
+    "path": "research/training/train.py",
+    "sha256": "4a3eee8d9dfc84dd84e4c0c9ee5a31831a138364ffb24730bdad02f39beb6263"
+  },
+  {
+    "path": "rules/ruleset.json",
+    "sha256": "a742256254240485de92d3e206da4896011f7f97a991361bf2ff9e8e1a23a5c4"
+  },
+  {
+    "path": "schemas/ml-features.schema.json",
+    "sha256": "d1c24b1e9f200e9a6786beaf30aab71462fc0d5a5875690b28eeb99bada8ac80"
+  },
+  {
+    "path": "schemas/risk.schema.json",
+    "sha256": "9ba2021e50641ebce647b64f78ebaaa4bc64bf5b5ed833391c457960380e3ee9"
+  },
+  {
+    "path": "schemas/telemetry.schema.json",
+    "sha256": "2c594ea542ea9bf3fc1e73744584c49f79d71385b590be725a6770ce37820a0f"
+  },
+  {
+    "path": "scripts/compare-parity.py",
+    "sha256": "9a4d0bfc8e6a42ff14ef2d0e2551800b29ef809b4d4d009c9d145f5f8ba748d8"
+  },
+  {
+    "path": "scripts/lifecycle-test.sh",
+    "sha256": "3ea3fd0cd56a1a46bfc9e37c4398b52e569fa581bd82f06670dcd45fd7ac79f1"
+  },
+  {
+    "path": "scripts/live-integration.py",
+    "sha256": "85701fa12d9796c6860404d4ad92c89f4a773f62be865720aeee889e23d641a6"
+  },
+  {
+    "path": "scripts/README-testing.md",
+    "sha256": "3a78e3f1818093505d88e2cb03402b0a9694889a58fb9502a97dfe4b28142709"
+  },
+  {
+    "path": "scripts/reboot-check.py",
+    "sha256": "afe118e31dbb7aa8edcce53862617c44ca0d631cd7ada5db5c096997d10c01e3"
+  },
+  {
+    "path": "scripts/refine_schema.py",
+    "sha256": "201216470dd16a16bed011f7aad8ab8874927bbea3227992689000869804ed7a"
+  },
+  {
+    "path": "scripts/release-bundle.py",
+    "sha256": "85e0803277862e3c003485fdd4f462c3861a2c3d9bbd8e8b2ba6aa6ab74746c5"
+  },
+  {
+    "path": "scripts/run-training-tests.py",
+    "sha256": "24bcbfde0f77454f1820eadbb4113286496b0a0df14d9749e753c0e5cb04a055"
+  },
+  {
+    "path": "scripts/soak-windows.ps1",
+    "sha256": "68f5c5447ff9973ce6b6cc9bc4c792b49c724272532bf01106295b0bb9f903c4"
+  },
+  {
+    "path": "scripts/soak.py",
+    "sha256": "5b846bf16c5c4c5b6520179d1ff2f1e670f6357f6e7567c86a1379835e5db744"
+  },
+  {
+    "path": "scripts/validate-release.py",
+    "sha256": "1a19673a7dd0b98546632637c4cd838e87cf21d76207ca012d69af0c9d9ff48f"
+  },
+  {
+    "path": "scripts/validate_contract.py",
+    "sha256": "ce1edcbf4f995f4a79f75c24ec50a36e0b8f9722b04c355295757c1a8ea57949"
+  },
+  {
+    "path": "SentinelZone.CryptoGuard.Linux.slnx",
+    "sha256": "54df236a8706fd0bcc45183defd322b66e9258c4461b5cdd5c190fe77f9ae691"
+  },
+  {
+    "path": "SentinelZone.CryptoGuard.Windows.slnx",
+    "sha256": "cc9ca9a9c9d463796671e36ebbc621ded069f2894da9daa02e70214b9c303d5b"
+  },
+  {
+    "path": "SOURCES.md",
+    "sha256": "ece8326cdf643a88a0309d17379e921aee1bf29309e1533521b1c306bd1b25f6"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Linux/AssemblyInfo.cs",
+    "sha256": "3f7d54e97cb967667a5f4d0ffe56c2e5d75cf3f4d72c1dca9981c6243129bd01"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Linux/CryptoGuard.Agent.Linux.csproj",
+    "sha256": "9a092022e099ac4fcb945355dfed6c60c6f23e62950ba3f96696cab336ec7841"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Linux/Ipc.cs",
+    "sha256": "fca8f57c22d1ba69c807f5d763af486a1024471eb1d16a708f605a74b936098d"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Linux/packages.linux-x64.lock.json",
+    "sha256": "09164557b3b3de7f25345301bb9407205a1d9e315bcf532cda1d086e8fe607af"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Linux/packages.portable.lock.json",
+    "sha256": "178df7eb86a20cff10a37637cfe55ce43c29579be0ec415634e91ed685c63c92"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Linux/Program.cs",
+    "sha256": "fd22c25be644a086a8783cb504ffcf386d0a65fadf6ae1dda1ad06e3ea394a20"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Windows/AssemblyInfo.cs",
+    "sha256": "d99507f9a6711aa3ea19dc85320a8f179deab20452135ca58ce8320a0004026b"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Windows/ChildCollector.cs",
+    "sha256": "1ad91d68183111372f40e2bff61770fb09dfedfc52f114fcec6931e59efed0ea"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Windows/CryptoGuard.Agent.Windows.csproj",
+    "sha256": "b51d610fc70db790db36f1a5376daf46fa35e3c1e46e5b8f1dbf9e07416c7605"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Windows/packages.lock.json",
+    "sha256": "5f53cbfd7c3380988993e5088a19a720f824beca18837b5c7a9bbc5942d54e0d"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Windows/packages.portable.lock.json",
+    "sha256": "307f73a6fb031ca794b930bd1155efa68241021771c5494e73cd899d97690a83"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Windows/packages.win-x64-singlefile.lock.json",
+    "sha256": "5cb120c0dc8f04205db120524ba5be63715db668ba0cddfaac8220ec72b190a9"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Windows/packages.win-x64.lock.json",
+    "sha256": "5cb120c0dc8f04205db120524ba5be63715db668ba0cddfaac8220ec72b190a9"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Windows/Program.cs",
+    "sha256": "8a11dbf137af29ac5a5f3cb480feb84cd67d7450217e157b447dfb44a9799cb9"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Windows/Runner.cs",
+    "sha256": "543107aa1691cc204046a801e088c84dfc1b12c956eb7fbc3fb3aacf13eba470"
+  },
+  {
+    "path": "src/CryptoGuard.Agent.Windows/StateMigration.cs",
+    "sha256": "398994ac8f02b1fa5999d87d088fa8fa1868798d520fe41adafb0c341e2cdd94"
+  },
+  {
+    "path": "src/CryptoGuard.Contracts/CryptoGuard.Contracts.csproj",
+    "sha256": "aa7fe35869bed525186ee1713b90ead01c57cc25e1bff9b9dbb8f03e21546663"
+  },
+  {
+    "path": "src/CryptoGuard.Contracts/Interfaces.cs",
+    "sha256": "e29588fe05587d8205a9c47ad45c1c81f24991e462398adef7db91819c630352"
+  },
+  {
+    "path": "src/CryptoGuard.Contracts/LegacyWindows/Interfaces.cs",
+    "sha256": "e461247ca92b10145421b3996122506a63f5d710ac526213bf60d07fd359ccf6"
+  },
+  {
+    "path": "src/CryptoGuard.Contracts/LegacyWindows/Models.cs",
+    "sha256": "6b1f5fb960b121623ad9e3fa02a4dbbaf415f9df48008f622efd84c4745b61a1"
+  },
+  {
+    "path": "src/CryptoGuard.Contracts/Models.cs",
+    "sha256": "78b03dd0a98d49e7bca30d91b0fa9ca695c5a1677319093275453b4f26b0189d"
+  },
+  {
+    "path": "src/CryptoGuard.Contracts/packages.linux-x64.lock.json",
+    "sha256": "5807264a99d1717d9b7d8333eaec0f71766609882d23559cab3be46aaa47f05c"
+  },
+  {
+    "path": "src/CryptoGuard.Contracts/packages.portable.lock.json",
+    "sha256": "a4364d81a6de2707d66fbced18fbbc926c882ab96e1d1aebbb17e871285b9d75"
+  },
+  {
+    "path": "src/CryptoGuard.Contracts/packages.win-x64-hardware.lock.json",
+    "sha256": "cd97f644c24bb2cd8c96d92c519036a65133ab22cafc294d07b527626ad20e84"
+  },
+  {
+    "path": "src/CryptoGuard.Contracts/packages.win-x64-singlefile.lock.json",
+    "sha256": "48a0e3c08afa535d511503d2008d02f644b77a0e057af5c4fb4986534cc537f6"
+  },
+  {
+    "path": "src/CryptoGuard.Contracts/packages.win-x64.lock.json",
+    "sha256": "cd97f644c24bb2cd8c96d92c519036a65133ab22cafc294d07b527626ad20e84"
+  },
+  {
+    "path": "src/CryptoGuard.Contracts/ReleaseVersions.cs",
+    "sha256": "2ffb97e82d25edd02fc6c6f83bac4babd463b562aa0b6001000be77c446ad37d"
+  },
+  {
+    "path": "src/CryptoGuard.Contracts/Summary.cs",
+    "sha256": "72b58acc14d5d78f3c0c9ecad0418ec9380a02f6001b4b401d8c4b9bd84ebbc8"
+  },
+  {
+    "path": "src/CryptoGuard.Core/AtomicFile.cs",
+    "sha256": "b3cd2e8ff8a8e59118b73143655738d627e9cd7bf08b41e44657517458f1a47c"
+  },
+  {
+    "path": "src/CryptoGuard.Core/CapabilitySummary.cs",
+    "sha256": "28d7a48d1d928a5e2d0d9bbbc7c53c9f03c79a9fc7a9482e5ac6561c97a84c7a"
+  },
+  {
+    "path": "src/CryptoGuard.Core/Configuration.cs",
+    "sha256": "a371bc7a75a83b8e4996cd90843f9903827ffc742908b0ef1938c31a78fa1674"
+  },
+  {
+    "path": "src/CryptoGuard.Core/CryptoGuard.Core.csproj",
+    "sha256": "ae12b16589f298dd60e804d8661affd8e6f4b7ff967284fd91b0810eb1b257bd"
+  },
+  {
+    "path": "src/CryptoGuard.Core/DurableSpool.cs",
+    "sha256": "55fbc115d2347e7b29714eeb2f0100afa1e8c559974683479757caa2eef1184b"
+  },
+  {
+    "path": "src/CryptoGuard.Core/HeartbeatWait.cs",
+    "sha256": "648d7b59b34194c3847d2ca669c5b53d2b245a8278b65ccc4303b166794023b8"
+  },
+  {
+    "path": "src/CryptoGuard.Core/LegacyWindows/DetectionState.cs",
+    "sha256": "b73be4767f90dc1ea3b5ecb027e4f0d0276a03d4fd2d98674c5127027bb26505"
+  },
+  {
+    "path": "src/CryptoGuard.Core/LegacyWindows/PersistenceRefreshGate.cs",
+    "sha256": "47347aef4e229b218588ab14a73762eda6f2215cdf24604d0a916af281b2137c"
+  },
+  {
+    "path": "src/CryptoGuard.Core/LegacyWindows/Privacy.cs",
+    "sha256": "8ce460193374549e081da6e2d36c9279c8490703829af02f18fb935c5d31290a"
+  },
+  {
+    "path": "src/CryptoGuard.Core/LegacyWindows/Spool.cs",
+    "sha256": "24d304beb6a8d5654786cd2935b5461e5fd32e2214b56ba270547e01fb97a8ee"
+  },
+  {
+    "path": "src/CryptoGuard.Core/LegacyWindows/State.cs",
+    "sha256": "9ceb2ea711654fd74b9cba7e7023757697445a79aa2c6d0bfaad23f4c6edabab"
+  },
+  {
+    "path": "src/CryptoGuard.Core/LegacyWindows/SummaryWindow.cs",
+    "sha256": "a77736a491471d8ec3e6d63e987abb3f935dc94a2a1bbbdc9329eba701894881"
+  },
+  {
+    "path": "src/CryptoGuard.Core/LocalCommands.cs",
+    "sha256": "e78a962e8efaecec50976d939985265afec1341f8f9df72febd7e9598f92744d"
+  },
+  {
+    "path": "src/CryptoGuard.Core/Measurements.cs",
+    "sha256": "59b9c639da0a409dab567ce09a7a759876fb18f2f70c0cedb73a009d125ced81"
+  },
+  {
+    "path": "src/CryptoGuard.Core/packages.linux-x64.lock.json",
+    "sha256": "6acac5c30ea1537f8bd2ac5577e0b2fe420c7d4f24ad21fc2e072fb11c28938f"
+  },
+  {
+    "path": "src/CryptoGuard.Core/packages.portable.lock.json",
+    "sha256": "7fc7991bd43386433ca477033ab6100489e4bafee9d989c8efbc20492c02669c"
+  },
+  {
+    "path": "src/CryptoGuard.Core/packages.win-x64-singlefile.lock.json",
+    "sha256": "5208c75d63f993e71800db9701a3ba754af4cd10daa202a3db79ec48e90f2f93"
+  },
+  {
+    "path": "src/CryptoGuard.Core/packages.win-x64.lock.json",
+    "sha256": "5208c75d63f993e71800db9701a3ba754af4cd10daa202a3db79ec48e90f2f93"
+  },
+  {
+    "path": "src/CryptoGuard.Core/Privacy.cs",
+    "sha256": "a69581f7269b3ec28e53dd4b8fd141c781328e138197603eed5e1afd3a706bef"
+  },
+  {
+    "path": "src/CryptoGuard.Core/RiskCheckpointStore.cs",
+    "sha256": "cf148caa01267907632d12915f0ee23055d4f514d6f18af4eabe5d34067c058d"
+  },
+  {
+    "path": "src/CryptoGuard.Core/SummaryWindow.cs",
+    "sha256": "2407d83381afa3473999db0e4f92953013802fcd61e9a09809d6684f129b8fa8"
+  },
+  {
+    "path": "src/CryptoGuard.Core/TransportStub.cs",
+    "sha256": "4e6e25c7d6ba0cf7e8df888234616691c05f0c1888cd37d5d90742cc2ca2dc23"
+  },
+  {
+    "path": "src/CryptoGuard.HardwareHost.Windows/CryptoGuard.HardwareHost.Windows.csproj",
+    "sha256": "20629b55303e4d069733197e1c80bdbc0ad3859719b0901f7b499e44bb15d3ba"
+  },
+  {
+    "path": "src/CryptoGuard.HardwareHost.Windows/packages.lock.json",
+    "sha256": "275c27b213aaa23bcb9ea101733b0bca56e5898328b7ae47050f21f58207df3e"
+  },
+  {
+    "path": "src/CryptoGuard.HardwareHost.Windows/packages.portable.lock.json",
+    "sha256": "f9a1a3207c7528bb2a03a1e3bd105fef723a1cd856bb824bb02af26c8e0cb3be"
+  },
+  {
+    "path": "src/CryptoGuard.HardwareHost.Windows/packages.win-x64-hardware.lock.json",
+    "sha256": "275c27b213aaa23bcb9ea101733b0bca56e5898328b7ae47050f21f58207df3e"
+  },
+  {
+    "path": "src/CryptoGuard.HardwareHost.Windows/packages.win-x64.lock.json",
+    "sha256": "275c27b213aaa23bcb9ea101733b0bca56e5898328b7ae47050f21f58207df3e"
+  },
+  {
+    "path": "src/CryptoGuard.HardwareHost.Windows/Program.cs",
+    "sha256": "ae82a2636f9db71ace6f2a867de4d511e6cd6b948052a514fe281af3c21ff74f"
+  },
+  {
+    "path": "src/CryptoGuard.ML/CryptoGuard.ML.csproj",
+    "sha256": "ae12b16589f298dd60e804d8661affd8e6f4b7ff967284fd91b0810eb1b257bd"
+  },
+  {
+    "path": "src/CryptoGuard.ML/Features.cs",
+    "sha256": "04339fa67ec7706308587fb337652996a9fafb6b328dfd8a2dee0f9ae0233b93"
+  },
+  {
+    "path": "src/CryptoGuard.ML/packages.linux-x64.lock.json",
+    "sha256": "6acac5c30ea1537f8bd2ac5577e0b2fe420c7d4f24ad21fc2e072fb11c28938f"
+  },
+  {
+    "path": "src/CryptoGuard.ML/packages.portable.lock.json",
+    "sha256": "7fc7991bd43386433ca477033ab6100489e4bafee9d989c8efbc20492c02669c"
+  },
+  {
+    "path": "src/CryptoGuard.ML/packages.win-x64-singlefile.lock.json",
+    "sha256": "5208c75d63f993e71800db9701a3ba754af4cd10daa202a3db79ec48e90f2f93"
+  },
+  {
+    "path": "src/CryptoGuard.ML/packages.win-x64.lock.json",
+    "sha256": "5208c75d63f993e71800db9701a3ba754af4cd10daa202a3db79ec48e90f2f93"
+  },
+  {
+    "path": "src/CryptoGuard.ML/ShadowForest.cs",
+    "sha256": "df8b01204857ae87b30591320230467583c483f8a4bd363871be5584dc02f562"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Linux/AssemblyInfo.cs",
+    "sha256": "3f7d54e97cb967667a5f4d0ffe56c2e5d75cf3f4d72c1dca9981c6243129bd01"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Linux/CryptoGuard.Platform.Linux.csproj",
+    "sha256": "6a842af5f25c9cf5393c35b37a554f2502cbb5ba107d2ead10d60bcc1926e848"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Linux/ExecutableInspector.cs",
+    "sha256": "8457c0ac2385f05757ef2d9cbc07704c3a5d874d7bdfb087bfcbdbd6eb657a94"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Linux/HardwareCollector.cs",
+    "sha256": "baa9a5da3b73b7581feaaee830f7b8f80b6470b0ab74cccd2feb6d31fb7d6c17"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Linux/LinuxCollector.cs",
+    "sha256": "51b2915b5d46797adc3cca7d8db8d2ea87778b6c8329f649953a3eb026906d6f"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Linux/Native.cs",
+    "sha256": "31b3613f1b4b80b4f40d24d61b93424bd149737dc266bdc173ca0209238243de"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Linux/NetworkCollector.cs",
+    "sha256": "4ac64965093c23c995e707f5283a069e696c190469449301a43e2318fe8f5648"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Linux/packages.linux-x64.lock.json",
+    "sha256": "2b046f9aa3d7d0747a388a9e1a2d96903dcc9560307275923c68cf4ffc91eac2"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Linux/packages.portable.lock.json",
+    "sha256": "15890bf1cdb01e0fe62cb9cde80199d5cf24928c793a85aa7fc315bf3a9fcb9d"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Linux/PersistenceCollector.cs",
+    "sha256": "3c71d385d39329890548200c58c754a4cae5332a106c53f2a09ed6858e0d19cc"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Linux/ProcParsing.cs",
+    "sha256": "5f5bddfdb766ca4f40dbcca2e5e9117a94697e090313785dab2a3c2ab914a62a"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/CatalogTrust.cs",
+    "sha256": "d87ac8623badb35fdba5222e127d42fc2137eff5d1978b5964b31fceb57d0edb"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/ConfigurationLoader.cs",
+    "sha256": "5c1f3f93ce5ceba681e0c7d0dee8bddab2dd89c6e70b8e0f601b73b3bd14a42d"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/CryptoGuard.Platform.Windows.csproj",
+    "sha256": "107992786d6106efdaf4ea6fa802288872e9555022164317d12d5bd078170063"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/ExecutableInspector.cs",
+    "sha256": "56becf54b1da22b4f368a23f9aa20d19e894ce2f1884a3b1fcdfda5627f75e2d"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/HostCollector.cs",
+    "sha256": "806a599d6922e49f687c29f286dde84745e1d361497baa9a028474142c705d4d"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/IdleBridge.cs",
+    "sha256": "feb03ad0803bd226cacad205a89af80ade92f99d3f9f9f15e2df29e625354da5"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/Native.cs",
+    "sha256": "fffda45e16f67e83fde40c2a2beaabfc57a8a73aed2a66bf5a67d883f0bfaa66"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/NetworkCollector.cs",
+    "sha256": "38209844cc696558c2999e4832ecba6cd17effe9e1e94a7df6d11c2b2d7ad51c"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/Normalization.cs",
+    "sha256": "738d1b6336a25e8e71fd19c8d5af27a0aff391a5e0418c4e09300b5b16832544"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/packages.lock.json",
+    "sha256": "0f74744e23eacf0930bc2af13a8ddb166f96cf6fbbd4a7ba00475cb0fddc2850"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/packages.portable.lock.json",
+    "sha256": "85ffb8b3d27928fc64bf4a50fd1fdf74bd0fbc11caa0affc7313fbc6d2193e13"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/packages.win-x64-singlefile.lock.json",
+    "sha256": "008ec8d809358f17d916ec581e655e775a6c07587827de481a320956e9786bc7"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/packages.win-x64.lock.json",
+    "sha256": "008ec8d809358f17d916ec581e655e775a6c07587827de481a320956e9786bc7"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/PersistenceCollector.cs",
+    "sha256": "e7d841c1c4a03189ab5358621a5f42388a6daf6aa2785516c16e22a7fd289a68"
+  },
+  {
+    "path": "src/CryptoGuard.Platform.Windows/ProcessCollector.cs",
+    "sha256": "8b3c05c11d2d143cf15ee96710a3447f2d59a10c638334a011c9c37de9812d41"
+  },
+  {
+    "path": "src/CryptoGuard.Replay/CryptoGuard.Replay.csproj",
+    "sha256": "18590e38679c0c07eca626946d672d46107c6947e89713475c70cdd2bb39f5c7"
+  },
+  {
+    "path": "src/CryptoGuard.Replay/packages.portable.lock.json",
+    "sha256": "c0db136577d5d62949efe61b11c622db7cdf2c45dac142ef6ca81e0630b4aaf3"
+  },
+  {
+    "path": "src/CryptoGuard.Replay/packages.win-x64.lock.json",
+    "sha256": "038345765a6dd8c4f2d6f4d5818855665bef045482121cf8941ae0f48e9423fc"
+  },
+  {
+    "path": "src/CryptoGuard.Replay/Program.cs",
+    "sha256": "6438f0961bab1ba103d25095901fc77d7acc3309ef9a2503f9a91009cdfbd24a"
+  },
+  {
+    "path": "src/CryptoGuard.Risk/CryptoGuard.Risk.csproj",
+    "sha256": "f5cbf524802b4f12c5709256e572147702e31320b1b90483c769d91fe1b9515a"
+  },
+  {
+    "path": "src/CryptoGuard.Risk/LegacyWindows/RulesEngine.cs",
+    "sha256": "4ac48f43c4d574570e8a45be15392351dc0b5421c8939fd00fa69b5ba3141ed6"
+  },
+  {
+    "path": "src/CryptoGuard.Risk/packages.linux-x64.lock.json",
+    "sha256": "39161c80517fc64912ce11f811916e719c0c56b9085c909fb2bcf86baba7c9c9"
+  },
+  {
+    "path": "src/CryptoGuard.Risk/packages.portable.lock.json",
+    "sha256": "4915c0c441444e08624b1b6354e8e90ba28179bc98e631856c641e4b91e57ef6"
+  },
+  {
+    "path": "src/CryptoGuard.Risk/packages.win-x64-singlefile.lock.json",
+    "sha256": "4abdcc9a4445d481acc26f0ae99b6c6a1a5436b7b33ef23b41fb84a8c2ae3c79"
+  },
+  {
+    "path": "src/CryptoGuard.Risk/packages.win-x64.lock.json",
+    "sha256": "4abdcc9a4445d481acc26f0ae99b6c6a1a5436b7b33ef23b41fb84a8c2ae3c79"
+  },
+  {
+    "path": "src/CryptoGuard.Risk/ReplayRunner.cs",
+    "sha256": "b6f3b839686847e7f8e9e313b7563e594a1a2596b7bd08e94b5f61093b3f0afd"
+  },
+  {
+    "path": "src/CryptoGuard.Risk/RuleEngine.cs",
+    "sha256": "14ad53bdb527ec070f01f1916fcc18d3a1d08782ab19b5c9821d78d4a6c84db6"
+  },
+  {
+    "path": "tests/Contract/CryptoGuard.Unified.Tests.csproj",
+    "sha256": "209d572e0be7b5812428ab951fbe95eaf46afa2db630affb99b5168118013f42"
+  },
+  {
+    "path": "tests/Contract/packages.portable.lock.json",
+    "sha256": "7a25c0a1c019f305d06b4bfaa929c3ef7ec489fbb0ff7117705f8ecfdb62b94f"
+  },
+  {
+    "path": "tests/Contract/packages.win-x64.lock.json",
+    "sha256": "3e5052124106a206ae99fe9c3b9b6d415e58fceb3994eb7ed6cc93cd146d7047"
+  },
+  {
+    "path": "tests/Contract/Program.cs",
+    "sha256": "c3cf02f3732bc30df8c0491d6a8132870976bf78c810f199f2b68368a4da0231"
+  },
+  {
+    "path": "tests/Core/README.md",
+    "sha256": "b35f45fab3ba7b8ca88ed337627922b88103cd4e46bcd6c0957841a5b7752fa6"
+  },
+  {
+    "path": "tests/CryptoGuard.SpoolBenchmark/CryptoGuard.SpoolBenchmark.csproj",
+    "sha256": "2e693a43fb57e8228d6d60271f2e65a9108b0ebb8dc339178302b70b4e6ddc09"
+  },
+  {
+    "path": "tests/CryptoGuard.SpoolBenchmark/Program.cs",
+    "sha256": "f91aa5cdabaa7ac004b6f71704f73ec23fb3631083b224a51c9dbc3d48066450"
+  },
+  {
+    "path": "tests/CryptoGuard.Tests/CryptoGuard.Tests.csproj",
+    "sha256": "73b38a709da4c72d35f0530970d56f3008dca372423dabdb477103335ebbf667"
+  },
+  {
+    "path": "tests/CryptoGuard.Tests/packages.portable.lock.json",
+    "sha256": "0b04e42e5f80f5bf4bea5d33f91c670ca6f4550907d2eb087affeb1868e29737"
+  },
+  {
+    "path": "tests/CryptoGuard.Tests/Program.cs",
+    "sha256": "41d2a6b4b3a0a46340eaca442513d9c3d9f240a124b000e04e1e11d7e0072a8a"
+  },
+  {
+    "path": "tests/CryptoGuard.Tests/Regression0221.cs",
+    "sha256": "ec00366605e103abf220bde91550257b8d2b1847ce241117de386bcd03338c44"
+  },
+  {
+    "path": "tests/Linux/README.md",
+    "sha256": "8844debd81e1969029ef282bae2e9e55c5cf1c739441084df85689d8909af718"
+  },
+  {
+    "path": "tests/ML/README.md",
+    "sha256": "06a63d68fa574af206a47969514f54535043764469e1272a5b3418c0947d60a7"
+  },
+  {
+    "path": "tests/Packaging/linux-clean-install.py",
+    "sha256": "dab04453d3cb3d6d337cb516bcea855e64f7faabf43a9a375beb472d1b3b1ed8"
+  },
+  {
+    "path": "tests/Packaging/linux-lifecycle.py",
+    "sha256": "77e89b5d98a38ee8f9b3c62412e92701e91664854885715d75f54448f0505204"
+  },
+  {
+    "path": "tests/Packaging/windows-clean-install.ps1",
+    "sha256": "11290fc2eacd1354a6f7bbac116a2b4ba24563b196664255f805c29a2aaa4536"
+  },
+  {
+    "path": "tests/Packaging/windows-lifecycle.ps1",
+    "sha256": "9050fc16343991670f1dad03cc28acef35526299fb9d79ebf3990d307e7b1012"
+  },
+  {
+    "path": "tests/Packaging/windows-portable.ps1",
+    "sha256": "7868bb2e4d00bbeac29c66b157bbcaab34c330b2750b5ba022f120e19bdc7352"
+  },
+  {
+    "path": "tests/Replay/README.md",
+    "sha256": "4b7ad6d990d757933936eaad48c3ca6ad07aca8c22f438d4aea8cbfcf7cd05af"
+  },
+  {
+    "path": "tests/Risk/README.md",
+    "sha256": "90bfe17a902a3e2de80d4d50decaaf54f0b36600d84a51f7d7f756081ee2c2cb"
+  },
+  {
+    "path": "tests/Windows/CryptoGuard.Tests.csproj",
+    "sha256": "dcce8fcb965c655bad5ccd2cbf356eb9b4c1abb3a6a040babc8df8536a7b7ed8"
+  },
+  {
+    "path": "tests/Windows/packages.lock.json",
+    "sha256": "e1632b7a58e2c014c83e5653b602f0359ccba7e9853c53913fd49b8c3ac23be6"
+  },
+  {
+    "path": "tests/Windows/packages.portable.lock.json",
+    "sha256": "57cf52d45f6b5d28844981bcae098ab88c91995cfa15257c764a7a1d8eae8509"
+  },
+  {
+    "path": "tests/Windows/packages.win-x64.lock.json",
+    "sha256": "0ffbe9465b91807f5c6720b14bdd1fed3e1a51cb0dc878dc86a7d37a0a673dc8"
+  },
+  {
+    "path": "tests/Windows/Program.cs",
+    "sha256": "576dcbd9105229c416f4db073348f1c2c8a9aed41f14b2f2fd029c89324d3540"
+  },
+  {
+    "path": "tests/WindowsMigration/CryptoGuard.Windows.Acceptance.Tests.csproj",
+    "sha256": "00e55ce381aecdb7ae0f84bc6c34a135da3bc0d47431ebc6847e3c783299910b"
+  },
+  {
+    "path": "tests/WindowsMigration/packages.portable.lock.json",
+    "sha256": "34a8ecfc61fd7142894d16a650d813e45627a45f7cc689888142443f2fee8e5e"
+  },
+  {
+    "path": "tests/WindowsMigration/Program.cs",
+    "sha256": "eae583fccb00b80b09469ac54d1f9b9994bdd121f5f3cb834ee1634c9e84135b"
+  },
+  {
+    "path": "THIRD-PARTY-NOTICES.txt",
+    "sha256": "bd35a90d2ec8b8748d2050b4200821fc7621ede48ec98c8baf8d71c9fd418a9f"
+  }
+]

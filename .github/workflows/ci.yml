@@ -1,0 +1,122 @@
+name: Phase 21-22 validation
+on:
+  pull_request:
+  push:
+    branches: ['**']
+    tags: ['v*']
+permissions:
+  contents: read
+env:
+  DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+      - uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1
+        with:
+          global-json-file: global.json
+      - run: sudo apt-get update && sudo apt-get install -y clang zlib1g-dev build-essential debhelper dpkg-dev fakeroot lintian python3-jsonschema
+      - name: Validate standalone source
+        run: |
+          python3 scripts/check-repository.py
+          python3 -m unittest discover -s tests/Repository -v
+          python3 scripts/secret-scan.py
+          dotnet restore SentinelZone.CryptoGuard.Linux.slnx --locked-mode --configfile NuGet.Config
+          dotnet build SentinelZone.CryptoGuard.Linux.slnx -c Release --no-restore
+      - run: chmod +x debian/rules debian/postinst debian/postrm && dpkg-buildpackage -b -us -uc
+      - run: lintian ../cryptoguard-agent_*.deb
+      - run: for f in contracts/replay/*.jsonl; do python3 scripts/validate_contract.py schemas/telemetry.schema.json "$f"; done
+      - run: |
+          python3 -m venv .training-venv
+          .training-venv/bin/pip install -r research/training/requirements.txt
+          .training-venv/bin/python -m unittest discover -s research/training -v
+      - run: |
+          mkdir -p artifacts/parity artifacts/debian
+          cp ../cryptoguard-agent_*.deb artifacts/debian/
+          cp debian/cryptoguard-agent/usr/lib/cryptoguard/cryptoguard-agent artifacts/linux-x64/cryptoguard-agent
+          for f in contracts/replay/*.jsonl; do artifacts/linux-x64/cryptoguard-agent replay "$f" > "artifacts/parity/$(basename "$f")"; done
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: linux-build
+          path: |
+            artifacts/linux-x64/
+            artifacts/debian/
+            artifacts/parity/
+            validation/
+            test-results/
+  windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+      - uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1
+        with:
+          global-json-file: global.json
+      - shell: pwsh
+        run: |
+          $iscc = ./packaging/windows/Prepare-Inno.ps1 -Directory "$env:RUNNER_TEMP/inno"
+          ./packaging/windows/Publish.ps1 -Iscc $iscc
+          New-Item -ItemType Directory -Force artifacts/parity | Out-Null
+          foreach($f in Get-ChildItem contracts/replay/*.jsonl){
+            $lines = & artifacts/win-x64/CryptoGuardAgent.exe replay --input $f.FullName --data "$env:RUNNER_TEMP/replay"
+            if($LASTEXITCODE){throw 'Replay failed'}
+            [IO.File]::WriteAllLines((Join-Path "$pwd/artifacts/parity" $f.Name),[string[]]$lines)
+          }
+          ./packaging/windows/Inventory.ps1 -NugetCache "$env:USERPROFILE/.nuget/packages" -ReleaseDirectory artifacts/inventory
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: windows-build
+          path: |
+            artifacts/win-x64/
+            artifacts/installer/
+            artifacts/inventory/
+            artifacts/parity/
+            validation/
+  parity:
+    needs: [windows, linux]
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          path: downloads
+      - run: python3 scripts/compare-parity.py downloads/windows-build/artifacts/parity downloads/linux-build/artifacts/parity --output parity-tests.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: parity-tests
+          path: parity-tests.json
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [windows, linux, parity]
+    runs-on: windows-2022
+    environment: release
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          path: downloads
+      - name: Validate tag and prepare optional signing
+        shell: pwsh
+        env:
+          SIGNING_PFX_BASE64: ${{ secrets.SIGNING_PFX_BASE64 }}
+          SIGNING_PFX_PASSWORD: ${{ secrets.SIGNING_PFX_PASSWORD }}
+          SIGNING_TIMESTAMP_URL: ${{ vars.SIGNING_TIMESTAMP_URL }}
+        run: |
+          [xml]$props=Get-Content Directory.Build.props
+          if($env:GITHUB_REF_NAME -ne ('v'+$props.Project.PropertyGroup.Version)){throw 'Tag does not match source'}
+          Copy-Item downloads/windows-build/artifacts artifacts -Recurse
+          if($env:SIGNING_PFX_BASE64){
+            $iscc=./packaging/windows/Prepare-Inno.ps1 -Directory "$env:RUNNER_TEMP/inno"
+            ./packaging/windows/Sign-CI.ps1 -Iscc $iscc
+          }
+      - shell: pwsh
+        run: |
+          python scripts/release-bundle.py --windows artifacts/win-x64 --setup (Get-ChildItem artifacts/installer/*.exe).FullName --linux downloads/linux-build/artifacts/linux-x64/cryptoguard-agent --deb (Get-ChildItem downloads/linux-build/artifacts/debian/*.deb).FullName --validation downloads --inventory artifacts/inventory/sbom.spdx.json --output release
+          python scripts/validate-release.py release
+          Compress-Archive -Path release/* -DestinationPath "SentinelZone-CryptoGuard-$($env:GITHUB_REF_NAME.Substring(1))-CI.zip"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: tagged-evaluation-release
+          path: |
+            release/
+            SentinelZone-CryptoGuard-*-CI.zip

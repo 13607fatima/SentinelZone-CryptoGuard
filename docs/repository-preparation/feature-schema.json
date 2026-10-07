@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "feature_records": 640,
+  "features_per_record": 22,
+  "scope": "Existing synthetic pipeline fixture generator; no new real-world detection evidence"
+}

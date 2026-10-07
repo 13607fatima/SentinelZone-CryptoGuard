@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "scope": "Original supplied Linux binary, clean source fixtures; two runs per mode/fixture, no new source build and no native Windows parity",
+  "binary_sha256": "6391cefb0a863777af6a79dae4ce236cbd9caedf6158d8014ac27946211c2649",
+  "version": "0.22.2-rc.1",
+  "replay_cases": 10,
+  "replay_invocations": 20,
+  "replay_rows": 370,
+  "risk_objects_validated": 370,
+  "telemetry_events_validated": 188,
+  "schemas_meta_validated": 6,
+  "shadow_heuristic_isolation_cases": 5,
+  "shadow_predictions_ok": 185,
+  "results": [
+    {
+      "fixture": "high-cpu-benign.jsonl",
+      "mode": "heuristic",
+      "status": "PASS",
+      "rows": 37,
+      "deterministic_repeat": true,
+      "sha256": "51e3d55ee6af08993528fc08a9e1c3004181fb480a969e7cac2c73d00dad380f"
+    },
+    {
+      "fixture": "high-cpu-benign.jsonl",
+      "mode": "shadow",
+      "status": "PASS",
+      "rows": 37,
+      "deterministic_repeat": true,
+      "sha256": "31cc5396aa77dc31b807c30324ac16d157c46994d7bff4d03a288d67c4967f02"
+    },
+    {
+      "fixture": "mining-like.jsonl",
+      "mode": "heuristic",
+      "status": "PASS",
+      "rows": 37,
+      "deterministic_repeat": true,
+      "sha256": "f891eefa73abcfc8933507469a09f49ccb66398cb496a064b4d12ab8412bede3"
+    },
+    {
+      "fixture": "mining-like.jsonl",
+      "mode": "shadow",
+      "status": "PASS",
+      "rows": 37,
+      "deterministic_repeat": true,
+      "sha256": "8425c51b86ecc02928e1eb04f4862eb73c3178a2b3a5da600b97d585d33d909f"
+    },
+    {
+      "fixture": "missing-gpu.jsonl",
+      "mode": "heuristic",
+      "status": "PASS",
+      "rows": 37,
+      "deterministic_repeat": true,
+      "sha256": "51e3d55ee6af08993528fc08a9e1c3004181fb480a969e7cac2c73d00dad380f"
+    },
+    {
+      "fixture": "missing-gpu.jsonl",
+      "mode": "shadow",
+      "status": "PASS",
+      "rows": 37,
+      "deterministic_repeat": true,
+      "sha256": "31cc5396aa77dc31b807c30324ac16d157c46994d7bff4d03a288d67c4967f02"
+    },
+    {
+      "fixture": "normal-browser.jsonl",
+      "mode": "heuristic",
+      "status": "PASS",
+      "rows": 37,
+      "deterministic_repeat": true,
+      "sha256": "51e87526be37f4a62d032b7a3176d9a6a5e05bacc917b8690304d2a5503f429c"
+    },
+    {
+      "fixture": "normal-browser.jsonl",
+      "mode": "shadow",
+      "status": "PASS",
+      "rows": 37,
+      "deterministic_repeat": true,
+      "sha256": "63f8c8451d55743d326d781d7c70bfadf14f52ec18f813cb57785f5158049038"
+    },
+    {
+      "fixture": "persistence-plus-network.jsonl",
+      "mode": "heuristic",
+      "status": "PASS",
+      "rows": 37,
+      "deterministic_repeat": true,
+      "sha256": "c69ab5d05d3aaecbfca9e0276384a21e756ac10f9b74a6d3b441ee82d7cb287f"
+    },
+    {
+      "fixture": "persistence-plus-network.jsonl",
+      "mode": "shadow",
+      "status": "PASS",
+      "rows": 37,
+      "deterministic_repeat": true,
+      "sha256": "a75b9297d418ef84bb974a233b118191854351d080a91c2c9991b1f55caa3ad5"
+    }
+  ]
+}

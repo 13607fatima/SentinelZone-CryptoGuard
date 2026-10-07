@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "passed": 9,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Every final artifact matches recorded real-VM test hash",
+      "status": "PASS"
+    },
+    {
+      "name": "Windows and Linux same-source rebuild byte parity",
+      "status": "PASS"
+    },
+    {
+      "name": "SPDX 2.3 document schema",
+      "status": "PASS",
+      "packages": 66
+    },
+    {
+      "name": "All SPDX file hashes match actual portable/release payload",
+      "status": "PASS",
+      "files": 262
+    },
+    {
+      "name": "All resolved source dependencies covered by SBOM",
+      "status": "PASS"
+    },
+    {
+      "name": "License material checksums and source origins",
+      "status": "PASS"
+    },
+    {
+      "name": "ML model manifest and training-code hash",
+      "status": "PASS"
+    },
+    {
+      "name": "Source ZIP tree manifest and bundle checksums",
+      "status": "PASS",
+      "source_files": 245
+    },
+    {
+      "name": "EXE/portable and ELF/DEB/tar byte parity",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "version": "0.22.2-rc.1",
+  "reboot": "UNVERIFIED",
+  "soak72h": "UNVERIFIED",
+  "package_sha256": "af80b84b597a498a058a80f62c40a7c8f8d09afc3730e20b4b48046c029184ee",
+  "binary_sha256": "6391cefb0a863777af6a79dae4ce236cbd9caedf6158d8014ac27946211c2649",
+  "status": "PASS",
+  "tests": [
+    {
+      "name": "package_checksum",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "linux_upgrade_and_systemd",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "agent_id_sequence_pending_preserved",
+      "status": "PASS",
+      "detail": {
+        "previous_pending_count": 357,
+        "pending_now": 358
+      }
+    },
+    {
+      "name": "linux_native_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "export_with_service_running",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "linux_stop",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "linux_restart",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "watchdog_with_90_second_interval",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "bounded_resource_measurement",
+      "status": "PASS",
+      "detail": {
+        "duration_seconds": 180.3961771119998,
+        "cpu_mean": 0.574450460327445,
+        "cpu_p95": 2.0440173932901775,
+        "rss_peak_bytes": 98230272,
+        "spool_growth_bytes": 2265945,
+        "dropped_events_delta": 0,
+        "collector_errors": [
+          {
+            "collector": "process",
+            "status": "temporarily_unavailable",
+            "code": "IOException"
+          }
+        ],
+        "service_restarts": {
+          "cryptoguard-agent": 0,
+          "cryptoguard-collector": 0
+        },
+        "scope": "Core, collector and live descendants sampled every 5 seconds; short-lived child CPU may be missed",
+        "soak72h": "UNVERIFIED"
+      }
+    },
+    {
+      "name": "linux_remove_retains_state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "linux_reinstall",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}

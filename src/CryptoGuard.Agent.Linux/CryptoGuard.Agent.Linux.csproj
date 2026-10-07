@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><AssemblyName>cryptoguard-agent</AssemblyName><PublishAot>true</PublishAot><StripSymbols>true</StripSymbols></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../CryptoGuard.Platform.Linux/CryptoGuard.Platform.Linux.csproj"/><ProjectReference Include="../CryptoGuard.Risk/CryptoGuard.Risk.csproj"/></ItemGroup>
+</Project>

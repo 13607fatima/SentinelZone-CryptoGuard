@@ -1,0 +1,1 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><OutputType>Exe</OutputType><AssemblyName>cryptoguard-replay</AssemblyName></PropertyGroup><ItemGroup><ProjectReference Include="../CryptoGuard.Risk/CryptoGuard.Risk.csproj"/><ProjectReference Include="../CryptoGuard.Core/CryptoGuard.Core.csproj"/></ItemGroup></Project>

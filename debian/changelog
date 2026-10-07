@@ -1,0 +1,23 @@
+cryptoguard-agent (0.22.2~rc.1) unstable; urgency=medium
+
+  * Unify Windows/Linux contracts, risk and durable delivery boundary.
+  * Add versioned ML features and optional hash-verified shadow inference.
+  * Preserve 0.22.1 watchdog, cron and pending risk checkpoint fixes.
+
+ -- SentinelZone local build <build@cryptoguard.invalid>  Tue, 06 Oct 2026 12:00:00 +0000
+
+cryptoguard-agent (0.22.1-1) unstable; urgency=medium
+
+  * Persist pending risk transitions atomically with lifecycle checkpoints.
+  * Correct cron argument parsing and service watchdog idle heartbeats.
+  * Index spool size and expiry instead of rescanning payloads per append.
+  * Add restart, quota, fsync, parser and heartbeat regression coverage.
+
+ -- SentinelZone local build <build@cryptoguard.invalid>  Mon, 05 Oct 2026 17:09:56 +0000
+
+cryptoguard-agent (0.22.0-1) unstable; urgency=medium
+
+  * Initial local Phase 21ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“22 Linux release candidate.
+  * Read-only collectors, deterministic risk rules, offline spool and tools.
+
+ -- SentinelZone local build <build@cryptoguard.invalid>  Sun, 04 Oct 2026 12:00:00 +0000

@@ -1,0 +1,39 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "skipped": 0,
+  "tests": [
+    {
+      "name": "windows_partial_ml_config_preserves_defaults",
+      "status": "PASS"
+    },
+    {
+      "name": "windows_unknown_config_property_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "windows_identity_sequence_and_spool_migration",
+      "status": "PASS"
+    },
+    {
+      "name": "windows_confirmed_alert_and_pending_migration",
+      "status": "PASS"
+    },
+    {
+      "name": "windows_resolved_alert_and_pending_migration",
+      "status": "PASS"
+    },
+    {
+      "name": "migration_corrupt_state_keeps_original",
+      "status": "PASS"
+    },
+    {
+      "name": "migration_full_spool_retains_original_pending",
+      "status": "PASS"
+    },
+    {
+      "name": "windows_normalized_unknown_metrics",
+      "status": "PASS"
+    }
+  ]
+}

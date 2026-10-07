@@ -1,0 +1,6 @@
+{
+  "tested_sha256": "6391cefb0a863777af6a79dae4ce236cbd9caedf6158d8014ac27946211c2649",
+  "rebuilt_sha256": "6391cefb0a863777af6a79dae4ce236cbd9caedf6158d8014ac27946211c2649",
+  "identical": true,
+  "note": "Same debhelper strip flags after NativeAOT publish"
+}

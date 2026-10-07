@@ -1,0 +1,16 @@
+Source: cryptoguard-agent
+Section: admin
+Priority: optional
+Maintainer: SentinelZone local build <build@cryptoguard.invalid>
+Build-Depends: debhelper-compat (= 13), clang, zlib1g-dev, binutils, python3
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+
+Package: cryptoguard-agent
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, adduser, systemd (>= 249), libssl3 | libssl3t64, zlib1g
+Description: Local CryptoGuard telemetry and explainable mining-risk agent
+ Collects Linux process, network, persistence and available hardware telemetry.
+ Provides bounded local storage, JSONL export, doctor and deterministic replay.
+ Runs an unprivileged core and a separate restricted read-only collector.
+ No process response actions or backend transport are included.

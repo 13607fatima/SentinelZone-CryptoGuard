@@ -1,0 +1,18 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: SentinelZone CryptoGuard
+Source: Local source archive delivered with this package
+
+Files: *
+Copyright: 2026 SentinelZone project authors
+License: LicenseRef-Project-Owner-Decision
+ This is a local development candidate. The project owner has not selected a
+ public redistribution license for the new project code. No public license
+ grant is asserted by this package. Third-party components retain their own
+ licenses below. See the supplied complete source and third-party notices.
+
+Files: licenses/dotnet-LICENSE.txt licenses/dotnet-THIRD-PARTY-NOTICES.txt
+Copyright: .NET Foundation and Contributors
+License: MIT-and-component-notices
+ The compiled Native AOT binary contains parts of .NET. The complete MIT text
+ and upstream component notices are installed alongside this copyright file.
+ NVML and other GPU drivers are optional system libraries and are not bundled.

@@ -1,0 +1,26 @@
+﻿{
+    "artifacts":  {
+                      "portable":  {
+                                       "bytes":  75452309,
+                                       "sha256":  "5f01a36ab5cc9ca39ab3e9a8d5fc0cfdf1aa827388f2c1e31bc8e72ad7c1d0a0"
+                                   },
+                      "agent":  {
+                                    "sha256":  "940adebd64432f948670468ac9c03660ae98140855bb0edd31a5ed018a509506",
+                                    "bytes":  77152877,
+                                    "signature":  "NotSigned"
+                                },
+                      "setup":  {
+                                    "sha256":  "2b8cc0dbe38f6cb075b274733daabdb444f3589975d240901a2cd485eab47b37",
+                                    "bytes":  57914219,
+                                    "signature":  "NotSigned"
+                                },
+                      "helper":  {
+                                     "sha256":  "67ffed906cd406286fda7071ad004eead760be6ede7608b0242976834ed54e11",
+                                     "bytes":  162304,
+                                     "signature":  "NotSigned"
+                                 }
+                  },
+    "observed_at":  "2026-10-06T08:20:47.6781067Z",
+    "version":  "0.22.2-rc.1",
+    "service":  "Running"
+}

@@ -1,0 +1,16 @@
+name: Feature request
+description: Propose a focused change with a clear use case.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and use case
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior and boundaries
+      description: Explain effects on telemetry, privacy, risk semantics and Phase 21/22/23 scope.
+    validations:
+      required: true

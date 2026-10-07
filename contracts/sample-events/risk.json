@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.2.0",
+  "event_type": "risk",
+  "event_uid": "4ae00334-8f35-5c36-9aa4-8d385dd979e3",
+  "agent_id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+  "agent_version": "0.22.2-rc.1",
+  "sequence": 1001,
+  "observed_at": "2026-01-01T00:01:30+00:00",
+  "sample_duration_ms": 5000,
+  "snapshot": null,
+  "risk": [
+    {
+      "process_instance_id": "process-a",
+      "score": 50,
+      "security_risk": 50,
+      "resource_impact": 99,
+      "assessment_source": "heuristic",
+      "reasons": [
+        "MINING_ARGUMENTS",
+        "SUSPICIOUS_PATH",
+        "SUSTAINED_COMPUTE"
+      ],
+      "reason_codes": [
+        "MINING_ARGUMENTS",
+        "SUSPICIOUS_PATH",
+        "SUSTAINED_COMPUTE"
+      ],
+      "unknown_data": [
+        "process_gpu",
+        "executable_trust",
+        "temperature"
+      ],
+      "ml": {
+        "enabled": false,
+        "mode": "shadow",
+        "model_version": null,
+        "prediction": null,
+        "score": null,
+        "feature_coverage": 0,
+        "status": "disabled"
+      },
+      "severity": "high",
+      "assessment": "mining_activity_suspected",
+      "authorization": "unknown",
+      "ruleset_version": "0.22.2-rc.1-rules.1",
+      "model_version": "heuristic-1.0",
+      "evidence": [
+        {
+          "group": "compute",
+          "points": 15,
+          "reason": "sustained_process_compute_at_least_30_seconds",
+          "source": "process_metrics",
+          "type": "process",
+          "process_instance_id": "process-a",
+          "detail": "sustained_process_compute_at_least_30_seconds"
+        },
+        {
+          "group": "arguments",
+          "points": 25,
+          "reason": "mining_protocol_and_algorithm_or_user_combination",
+          "source": "redacted_argument_features",
+          "type": "process",
+          "process_instance_id": "process-a",
+          "detail": "mining_protocol_and_algorithm_or_user_combination"
+        },
+        {
+          "group": "executable",
+          "points": 10,
+          "reason": "mining_evidence_in_unusual_writable_location",
+          "source": "executable_context",
+          "type": "process",
+          "process_instance_id": "process-a",
+          "detail": "mining_evidence_in_unusual_writable_location"
+        }
+      ],
+      "coverage": [
+        {
+          "name": "process",
+          "status": "ok",
+          "source": "fixture",
+          "detail": "Complete controlled inventory"
+        },
+        {
+          "name": "network",
+          "status": "ok",
+          "source": "fixture",
+          "detail": "Controlled fixture"
+        },
+        {
+          "name": "persistence",
+          "status": "ok",
+          "source": "fixture",
+          "detail": "Controlled fixture"
+        }
+      ],
+      "lifecycle": "confirmed",
+      "alert_id": "c0df1b44-dc0b-4787-f9f9-2bbb68195db9",
+      "first_seen": "2026-01-01T00:00:30+00:00",
+      "last_seen": "2026-01-01T00:01:30+00:00",
+      "lifecycle_changed": true
+    }
+  ],
+  "health": {
+    "collector_errors": [],
+    "collection_duration_ms": 0,
+    "collector_latency": [],
+    "sensor_availability": [],
+    "spool_bytes": 0,
+    "dropped_events": 0,
+    "recovered_partial_writes": 0,
+    "status": "ok"
+  }
+}

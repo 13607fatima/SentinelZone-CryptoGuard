@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.2.0",
+  "event_type": "health",
+  "event_uid": "826183f2-d303-5f98-980c-aaa41d2ada43",
+  "agent_id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+  "agent_version": "0.22.2-rc.1",
+  "sequence": 1002,
+  "observed_at": "2026-01-01T00:00:00+00:00",
+  "sample_duration_ms": 0,
+  "snapshot": {
+    "summary": null,
+    "observed_at": "2026-01-01T00:00:00+00:00",
+    "monotonic_ms": 0,
+    "sample_duration_ms": 0,
+    "host": {
+      "platform": "linux",
+      "os_version": "unknown",
+      "architecture": "x64",
+      "boot_id": "fixture-boot",
+      "hostname": "redacted",
+      "logical_cpu_count": 4,
+      "cpu_percent": {
+        "value": 99,
+        "unit": "percent_host_capacity",
+        "status": "ok",
+        "source": "fixture"
+      },
+      "memory_used_percent": {
+        "value": 60,
+        "unit": "percent",
+        "status": "ok",
+        "source": "fixture"
+      },
+      "memory_total_bytes": {
+        "value": 17179869184,
+        "unit": "bytes",
+        "status": "ok",
+        "source": "fixture"
+      },
+      "network_receive_bytes_per_second": {
+        "value": null,
+        "unit": "bytes_per_second",
+        "status": "warm_up",
+        "source": "proc.net.dev"
+      },
+      "network_transmit_bytes_per_second": {
+        "value": null,
+        "unit": "bytes_per_second",
+        "status": "warm_up",
+        "source": "proc.net.dev"
+      },
+      "idle_seconds": {
+        "value": null,
+        "unit": "seconds",
+        "status": "unsupported",
+        "source": "desktop.session"
+      },
+      "host_memory_used_percent": {
+        "value": 60,
+        "unit": "percent",
+        "status": "ok",
+        "source": "fixture"
+      },
+      "user_idle_seconds": {
+        "value": null,
+        "unit": "seconds",
+        "status": "unsupported",
+        "source": "desktop.session"
+      },
+      "new_processes_observed": 0,
+      "process_start_coverage": "snapshot_only_short_lived_processes_may_be_missed"
+    },
+    "processes": [],
+    "connections": [],
+    "persistence": [],
+    "devices": [],
+    "sensors": [],
+    "coverage": [
+      {
+        "name": "process",
+        "status": "ok",
+        "source": "fixture",
+        "detail": "Complete controlled inventory"
+      },
+      {
+        "name": "network",
+        "status": "ok",
+        "source": "fixture",
+        "detail": "Controlled fixture"
+      },
+      {
+        "name": "persistence",
+        "status": "ok",
+        "source": "fixture",
+        "detail": "Controlled fixture"
+      }
+    ],
+    "errors": []
+  },
+  "risk": [],
+  "health": {
+    "collector_errors": [],
+    "collection_duration_ms": 0,
+    "collector_latency": [],
+    "sensor_availability": [],
+    "spool_bytes": 0,
+    "dropped_events": 0,
+    "recovered_partial_writes": 0,
+    "status": "ok"
+  }
+}

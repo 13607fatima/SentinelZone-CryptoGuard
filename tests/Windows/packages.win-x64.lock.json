@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0-windows7.0": {
+      "System.CodeDom": {
+        "type": "Transitive",
+        "resolved": "10.0.12",
+        "contentHash": "Kk3yEavoGHXCAFTLLegxztgSdj24JrkAHelwgWnu+YMFxezcU2DbABEOOIMdy04PExUtKQtlazaKqo0qSa1X6A=="
+      },
+      "System.Management": {
+        "type": "Transitive",
+        "resolved": "10.0.12",
+        "contentHash": "ApUsYmsNG8aPiMxsO6ROGZnqJwSZY8zeMlAQcuQg+ilPFUcIyBUC0BL8qA6wmPLNVsvL4nyhUrhhxh6qn0cx0Q==",
+        "dependencies": {
+          "System.CodeDom": "10.0.12"
+        }
+      },
+      "cryptoguard.contracts": {
+        "type": "Project"
+      },
+      "cryptoguard.core": {
+        "type": "Project",
+        "dependencies": {
+          "CryptoGuard.Contracts": "[0.22.2-rc.1, )"
+        }
+      },
+      "cryptoguard.ml": {
+        "type": "Project",
+        "dependencies": {
+          "CryptoGuard.Contracts": "[0.22.2-rc.1, )"
+        }
+      },
+      "cryptoguard.platform.windows": {
+        "type": "Project",
+        "dependencies": {
+          "CryptoGuard.Core": "[0.22.2-rc.1, )",
+          "System.Management": "[10.0.12, )"
+        }
+      },
+      "cryptoguard.risk": {
+        "type": "Project",
+        "dependencies": {
+          "CryptoGuard.Contracts": "[0.22.2-rc.1, )",
+          "CryptoGuard.Core": "[0.22.2-rc.1, )",
+          "CryptoGuard.ML": "[0.22.2-rc.1, )"
+        }
+      }
+    },
+    "net10.0-windows7.0/win-x64": {
+      "System.Management": {
+        "type": "Transitive",
+        "resolved": "10.0.12",
+        "contentHash": "ApUsYmsNG8aPiMxsO6ROGZnqJwSZY8zeMlAQcuQg+ilPFUcIyBUC0BL8qA6wmPLNVsvL4nyhUrhhxh6qn0cx0Q==",
+        "dependencies": {
+          "System.CodeDom": "10.0.12"
+        }
+      }
+    }
+  }
+}

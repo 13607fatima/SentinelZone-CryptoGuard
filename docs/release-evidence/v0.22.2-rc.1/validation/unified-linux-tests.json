@@ -1,0 +1,303 @@
+{
+  "passed": 59,
+  "failed": 0,
+  "skipped": 0,
+  "runtime_os": "Ubuntu 24.04.5 LTS",
+  "tests": [
+    {
+      "name": "test_windows_linux_same_normalized_input_same_risk",
+      "area": "parity",
+      "status": "PASS"
+    },
+    {
+      "name": "test_alert_survives_restart",
+      "area": "risk",
+      "status": "PASS"
+    },
+    {
+      "name": "test_resolved_alert_survives_restart",
+      "area": "risk",
+      "status": "PASS"
+    },
+    {
+      "name": "test_single_cpu_spike_not_confirmed",
+      "area": "risk",
+      "status": "PASS"
+    },
+    {
+      "name": "test_pid_reuse_does_not_inherit_alert",
+      "area": "risk",
+      "status": "PASS"
+    },
+    {
+      "name": "absent_process_gap_is_not_continuous_absence",
+      "area": "risk",
+      "status": "PASS"
+    },
+    {
+      "name": "missing_cpu_does_not_resolve_confirmed_alert",
+      "area": "risk",
+      "status": "PASS"
+    },
+    {
+      "name": "unsigned_binary_alone_remains_low",
+      "area": "risk",
+      "status": "PASS"
+    },
+    {
+      "name": "single_port_alone_remains_low",
+      "area": "risk",
+      "status": "PASS"
+    },
+    {
+      "name": "trusted_render_has_high_resource_and_low_security",
+      "area": "risk",
+      "status": "PASS"
+    },
+    {
+      "name": "approved_hash_path_cannot_hide_malicious_hash",
+      "area": "risk",
+      "status": "PASS"
+    },
+    {
+      "name": "score_is_explained_and_not_probability",
+      "area": "contract",
+      "status": "PASS"
+    },
+    {
+      "name": "sensor_unknown_stays_null",
+      "area": "contract",
+      "status": "PASS"
+    },
+    {
+      "name": "non_ok_zero_is_rejected",
+      "area": "contract",
+      "status": "PASS"
+    },
+    {
+      "name": "cpu_actual_elapsed_host_capacity",
+      "area": "core",
+      "status": "PASS"
+    },
+    {
+      "name": "network_actual_elapsed_and_reset",
+      "area": "core",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_weights_real_intervals",
+      "area": "core",
+      "status": "PASS"
+    },
+    {
+      "name": "redaction_0",
+      "area": "privacy",
+      "status": "PASS"
+    },
+    {
+      "name": "redaction_1",
+      "area": "privacy",
+      "status": "PASS"
+    },
+    {
+      "name": "redaction_2",
+      "area": "privacy",
+      "status": "PASS"
+    },
+    {
+      "name": "redaction_3",
+      "area": "privacy",
+      "status": "PASS"
+    },
+    {
+      "name": "redaction_4",
+      "area": "privacy",
+      "status": "PASS"
+    },
+    {
+      "name": "redaction_5",
+      "area": "privacy",
+      "status": "PASS"
+    },
+    {
+      "name": "redaction_6",
+      "area": "privacy",
+      "status": "PASS"
+    },
+    {
+      "name": "spool_uid_collision_rejected",
+      "area": "core",
+      "status": "PASS"
+    },
+    {
+      "name": "pending_risk_retry_is_not_a_dropped_event",
+      "area": "core",
+      "status": "PASS"
+    },
+    {
+      "name": "local_sink_requires_ack",
+      "area": "core",
+      "status": "PASS"
+    },
+    {
+      "name": "feature_contract_has_22_unique_named_units",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_missing_features_are_null",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_model_hash_verification",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_model_rejects_cycles",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_shadow_cannot_raise_security_or_confirm",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_insufficient_coverage_abstains",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_invalid_model_does_not_stop_heuristic",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_extra_feature_does_not_change_prediction",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_bad_json_rejected_without_execution",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_unsupported_format_version_rejected",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_wrong_feature_contract_version_rejected",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_windows_linux_vector_prediction_equal",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "linux_0221_identity_sequence_and_pending_survive",
+      "area": "migration",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_null_trees_fails_safe",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_null_feature_names_fails_safe",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "ml_null_training_medians_fails_safe",
+      "area": "ml",
+      "status": "PASS"
+    },
+    {
+      "name": "jwt_redacted_from_spool_export_and_features",
+      "area": "privacy",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_idle",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_browser",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_video",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_compile",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_windows_update",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_antivirus_scan",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_backup",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_compression",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_gaming",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_video_encoding",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_approved_render",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_approved_ai_gpu",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_normal_cpu_stress",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "normal_workload_normal_ram_stress",
+      "area": "detection",
+      "status": "PASS"
+    },
+    {
+      "name": "controlled_mining_like_confirmed_then_resolved",
+      "area": "detection",
+      "status": "PASS"
+    }
+  ]
+}

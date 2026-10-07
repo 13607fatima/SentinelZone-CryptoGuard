@@ -1,0 +1,29 @@
+{
+  "version": "0.22.2-rc.1-rules.1",
+  "implementation": "CryptoGuard.Risk.RuleEngine",
+  "calibration": "initial_explainable_rules_not_a_validated_accuracy_claim",
+  "group_caps": {
+    "compute": 15,
+    "arguments": 25,
+    "network": 30,
+    "executable": 10,
+    "persistence": 10,
+    "anomaly": 10
+  },
+  "malicious_hash_score": 95,
+  "high_requires": "score >= 50 and two independent groups and mining-specific evidence; trusted malicious hash is a separate rule",
+  "confirm_seconds": 60,
+  "resolve_seconds": 60,
+  "ml_enabled": false,
+  "randomx_sniffer_enabled": false,
+  "active_response_enabled": false,
+  "notes": [
+    "No port-only scoring",
+    "No low-traffic veto",
+    "No signature/package-trust veto",
+    "Authorization requires a hash, exact path and policy ID",
+    "Device GPU metrics never become process GPU metrics"
+  ],
+  "ml_mode": "shadow_when_explicitly_configured",
+  "assessment_source": "heuristic"
+}

@@ -1,0 +1,473 @@
+{
+  "version": "0.22.2-rc.1",
+  "capabilities": {
+    "Windows Agent": "PARTIAL",
+    "Linux Agent": "PARTIAL",
+    "Cross-platform contract": "PASS",
+    "Packaging": "PASS",
+    "Heuristic Risk Engine": "PASS",
+    "Explainability": "PASS",
+    "ML Shadow": "PASS",
+    "Detection Evaluation": "PARTIAL",
+    "False Positive Evaluation": "PARTIAL",
+    "Windows Hardware": "PARTIAL",
+    "Linux Hardware": "PARTIAL",
+    "Replay": "PASS",
+    "Spool": "PASS",
+    "Migration": "PASS",
+    "Privacy": "PASS"
+  },
+  "counts": {
+    "PASS": 55,
+    "FAIL": 0,
+    "UNVERIFIED": 17,
+    "NOT APPLICABLE": 2
+  },
+  "tests": [
+    {
+      "area": "Windows clean install",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real VM lifecycle. Upgrade from alpha.3 also recorded before final partial-config fix; final bytes clean install/reinstall and failed-candidate rollback verified."
+    },
+    {
+      "area": "Windows Service",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real VM lifecycle. Upgrade from alpha.3 also recorded before final partial-config fix; final bytes clean install/reinstall and failed-candidate rollback verified."
+    },
+    {
+      "area": "Windows restart",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real VM lifecycle. Upgrade from alpha.3 also recorded before final partial-config fix; final bytes clean install/reinstall and failed-candidate rollback verified."
+    },
+    {
+      "area": "Windows upgrade",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real VM lifecycle. Upgrade from alpha.3 also recorded before final partial-config fix; final bytes clean install/reinstall and failed-candidate rollback verified."
+    },
+    {
+      "area": "Windows failed upgrade rollback",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real VM lifecycle. Upgrade from alpha.3 also recorded before final partial-config fix; final bytes clean install/reinstall and failed-candidate rollback verified."
+    },
+    {
+      "area": "Windows uninstall",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real VM lifecycle. Upgrade from alpha.3 also recorded before final partial-config fix; final bytes clean install/reinstall and failed-candidate rollback verified."
+    },
+    {
+      "area": "Windows reinstall",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real VM lifecycle. Upgrade from alpha.3 also recorded before final partial-config fix; final bytes clean install/reinstall and failed-candidate rollback verified."
+    },
+    {
+      "area": "Windows agent ID persistence",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real VM lifecycle. Upgrade from alpha.3 also recorded before final partial-config fix; final bytes clean install/reinstall and failed-candidate rollback verified."
+    },
+    {
+      "area": "Clone identity from empty state",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real VM lifecycle. Upgrade from alpha.3 also recorded before final partial-config fix; final bytes clean install/reinstall and failed-candidate rollback verified."
+    },
+    {
+      "area": "Linux clean install",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real Ubuntu 24.04 VM; original data retained/restored; Splunk unchanged."
+    },
+    {
+      "area": "Linux systemd",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real Ubuntu 24.04 VM; original data retained/restored; Splunk unchanged."
+    },
+    {
+      "area": "Linux stop",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real Ubuntu 24.04 VM; original data retained/restored; Splunk unchanged."
+    },
+    {
+      "area": "Linux restart",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real Ubuntu 24.04 VM; original data retained/restored; Splunk unchanged."
+    },
+    {
+      "area": "Linux upgrade",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real Ubuntu 24.04 VM; original data retained/restored; Splunk unchanged."
+    },
+    {
+      "area": "Linux remove",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real Ubuntu 24.04 VM; original data retained/restored; Splunk unchanged."
+    },
+    {
+      "area": "Linux purge",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real Ubuntu 24.04 VM; original data retained/restored; Splunk unchanged."
+    },
+    {
+      "area": "Linux reinstall",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real Ubuntu 24.04 VM; original data retained/restored; Splunk unchanged."
+    },
+    {
+      "area": "Linux agent ID persistence",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real Ubuntu 24.04 VM; original data retained/restored; Splunk unchanged."
+    },
+    {
+      "area": "Linux watchdog 90s interval",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Real Ubuntu 24.04 VM; original data retained/restored; Splunk unchanged."
+    },
+    {
+      "area": "Windows portable EXE / ZIP",
+      "status": "PASS",
+      "evidence": "packaging-tests.json",
+      "scope": "Actual final portable ZIP extracted on Windows; standalone without hardware directory and 65-second collection."
+    },
+    {
+      "area": "Linux standalone ELF",
+      "status": "PASS",
+      "evidence": "linux-live-integration.json",
+      "scope": "Exact ELF extracted from tested DEB, benign loopback workload."
+    },
+    {
+      "area": "PID reuse",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "CPU normalized semantics",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "RAM measurement",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "Hash cache",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "Persistence read-only parsing",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "Privacy redaction",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "Spool full / risk reserve",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "Partial spool write",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "Corrupt spool recovery",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "Crash/checkpoint recovery",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "Risk confirmed",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "Risk resolved",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "Unacked event UID retry",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "Missing sensors null/status",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-tests.json; unified-windows-tests.json; unified-linux-tests.json",
+      "scope": "Regression/contract tests; scope is the cases named in the reports, not all real hardware/processes."
+    },
+    {
+      "area": "IPv4 ownership",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-live-integration.json",
+      "scope": "Actual loopback sockets mapped to owning processes on both VMs."
+    },
+    {
+      "area": "IPv6 ownership",
+      "status": "PASS",
+      "evidence": "windows-tests.json; linux-live-integration.json",
+      "scope": "Actual loopback sockets mapped to owning processes on both VMs."
+    },
+    {
+      "area": "CPU reference measurement",
+      "status": "PASS",
+      "evidence": "linux-live-integration.json",
+      "scope": "Bounded Linux CPU worker compared to /proc reference; Windows API warmup/range and formula regression separately tested."
+    },
+    {
+      "area": "Authenticode",
+      "status": "PASS",
+      "evidence": "windows-tests.json",
+      "scope": "Signed dotnet host and cache regression; not a claim that CryptoGuard itself is signed."
+    },
+    {
+      "area": "Linux package trust",
+      "status": "PASS",
+      "evidence": "linux-tests.json; linux-live-integration.json",
+      "scope": "Local package-origin provider; repository-signature assurance is not claimed."
+    },
+    {
+      "area": "Windows/Linux replay parity",
+      "status": "PASS",
+      "evidence": "parity-tests.json",
+      "scope": "10 cases / 370 full risk arrays, 5 heuristic plus 5 shadow, native Windows EXE and packaged Linux ELF."
+    },
+    {
+      "area": "Migration old identity / alert / pending",
+      "status": "PASS",
+      "evidence": "migration-tests.json; unified-linux-tests.json; packaging-tests.json",
+      "scope": "Original files preserved on failure, confirmed/resolved states and pending event identifiers verified."
+    },
+    {
+      "area": "ML shadow cannot change heuristic",
+      "status": "PASS",
+      "evidence": "ml-evaluation.json",
+      "scope": "15 ML runtime tests on each OS, real numeric research model replay; default no validated model."
+    },
+    {
+      "area": "ML missing features",
+      "status": "PASS",
+      "evidence": "ml-evaluation.json",
+      "scope": "15 ML runtime tests on each OS, real numeric research model replay; default no validated model."
+    },
+    {
+      "area": "ML model hash verification",
+      "status": "PASS",
+      "evidence": "ml-evaluation.json",
+      "scope": "15 ML runtime tests on each OS, real numeric research model replay; default no validated model."
+    },
+    {
+      "area": "ML malformed model fail-safe",
+      "status": "PASS",
+      "evidence": "ml-evaluation.json",
+      "scope": "15 ML runtime tests on each OS, real numeric research model replay; default no validated model."
+    },
+    {
+      "area": "Normal-workload false positive fixtures",
+      "status": "PASS",
+      "evidence": "detection-evaluation.json",
+      "scope": "14 named synthetic workload scenarios; high compute remains low security."
+    },
+    {
+      "area": "Controlled positive detection",
+      "status": "PASS",
+      "evidence": "detection-evaluation.json",
+      "scope": "Deterministic fixture plus real benign Linux CPU and loopback IOC simulation; no miner or external pool."
+    },
+    {
+      "area": "No-GPU VM",
+      "status": "PASS",
+      "evidence": "packaging-tests.json; linux-live-integration.json",
+      "scope": "Unsupported/unknown values remain null; no physical GPU assertion."
+    },
+    {
+      "area": "Headless idle",
+      "status": "PASS",
+      "evidence": "packaging-tests.json; schema-tests.json",
+      "scope": "Service/headless unknown values are allowed; does not measure interactive input time."
+    },
+    {
+      "area": "Short resource measurement",
+      "status": "PASS",
+      "evidence": "windows-resource.json; linux-resource.json",
+      "scope": "Approximately 3 minutes on each VM; sampled helpers, not 72h/reference-host certification."
+    },
+    {
+      "area": "Windows reboot",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "No remote reboot performed."
+    },
+    {
+      "area": "Linux reboot",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "No remote reboot performed on Splunk host."
+    },
+    {
+      "area": "72h Windows",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "Soak runner smoke test only."
+    },
+    {
+      "area": "72h Linux",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "Soak runner smoke test only."
+    },
+    {
+      "area": "Physical NVIDIA",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "No physical GPU available."
+    },
+    {
+      "area": "Physical AMD",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "No physical GPU available."
+    },
+    {
+      "area": "Physical Intel",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "No physical GPU available."
+    },
+    {
+      "area": "GPU no-driver physical matrix",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "No suitable physical hardware."
+    },
+    {
+      "area": "GPU permission-blocked physical matrix",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "No suitable physical hardware."
+    },
+    {
+      "area": "Physical temperature sensors",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "VM cannot establish accuracy on physical hardware."
+    },
+    {
+      "area": "Desktop interactive idle",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "No real interactive-session timing comparison."
+    },
+    {
+      "area": "Full normal workloads on real applications",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "Browser/video/build/update/AV/render/AI/gaming suite requires diverse real sessions."
+    },
+    {
+      "area": "Physical disk full",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "IO failure injection and spool budget covered; physical filesystem exhaustion not performed."
+    },
+    {
+      "area": "72h reference-host CPU/RAM targets",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "Measured VM duration and hardware do not satisfy reference profile."
+    },
+    {
+      "area": "Production model acceptance",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "Own representative host-grouped dataset not yet collected."
+    },
+    {
+      "area": "Code signing",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "UNSIGNED EVALUATION; organization certificate absent."
+    },
+    {
+      "area": "Hosted GitHub Actions run",
+      "status": "UNVERIFIED",
+      "evidence": "KNOWN-LIMITATIONS.md",
+      "scope": "Workflow and local build primitives checked; no GitHub run dispatched."
+    },
+    {
+      "area": "SBOM verification",
+      "status": "PASS",
+      "evidence": "artifact-verification.json; license-inventory.json; rebuild-parity-windows.json; rebuild-parity-linux.json",
+      "scope": "Release candidate schema, checksum, package/source inventory and both same-source rebuild hashes verified; final archive verifier reruns these checks."
+    },
+    {
+      "area": "Checksum verification",
+      "status": "PASS",
+      "evidence": "artifact-verification.json; license-inventory.json; rebuild-parity-windows.json; rebuild-parity-linux.json",
+      "scope": "Release candidate schema, checksum, package/source inventory and both same-source rebuild hashes verified; final archive verifier reruns these checks."
+    },
+    {
+      "area": "Source/artifact consistency",
+      "status": "PASS",
+      "evidence": "artifact-verification.json; license-inventory.json; rebuild-parity-windows.json; rebuild-parity-linux.json",
+      "scope": "Release candidate schema, checksum, package/source inventory and both same-source rebuild hashes verified; final archive verifier reruns these checks."
+    },
+    {
+      "area": "License inventory",
+      "status": "PASS",
+      "evidence": "artifact-verification.json; license-inventory.json; rebuild-parity-windows.json; rebuild-parity-linux.json",
+      "scope": "Release candidate schema, checksum, package/source inventory and both same-source rebuild hashes verified; final archive verifier reruns these checks."
+    },
+    {
+      "area": "Phase23 production backend",
+      "status": "NOT APPLICABLE",
+      "evidence": "docs/PHASE23-HANDOFF.md",
+      "scope": "NOT IMPLEMENTED BY DESIGN"
+    },
+    {
+      "area": "RandomX native detector",
+      "status": "NOT APPLICABLE",
+      "evidence": "docs/RESEARCH-SOURCES.md",
+      "scope": "Experimental reference only; disabled/not included."
+    }
+  ],
+  "note": "PARTIAL component status reflects listed external production gates, not suppressed test failures."
+}

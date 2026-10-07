@@ -1,0 +1,6 @@
+FROM docker.io/library/ubuntu:22.04@sha256:08ea48a03a3e78ebc7cd526e6a275053223aadd88bfc09cc49b06d5281525fde
+ENV DEBIAN_FRONTEND=noninteractive DOTNET_CLI_TELEMETRY_OPTOUT=1 DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1 DOTNET_GENERATE_ASPNET_CERTIFICATE=false PATH=/opt/dotnet:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+RUN apt-get update && apt-get install -y --no-install-recommends clang zlib1g-dev build-essential debhelper dpkg-dev fakeroot lintian ca-certificates libicu70 libssl3 git python3-jsonschema binutils systemd && rm -rf /var/lib/apt/lists/*
+COPY dotnet-sdk-10.0.401-linux-x64.tar.gz /tmp/sdk.tar.gz
+RUN echo '51c8b999af9e8dd9998c9edc5944e19a90788862068acd38694e098889054ce8c23d4f0c5cccfa16bf187d044562359e5ee69a9f8ad0bbe913ba90311fbce25b  /tmp/sdk.tar.gz' | sha512sum -c - && mkdir -p /opt/dotnet && tar -xzf /tmp/sdk.tar.gz -C /opt/dotnet && rm /tmp/sdk.tar.gz
+WORKDIR /src

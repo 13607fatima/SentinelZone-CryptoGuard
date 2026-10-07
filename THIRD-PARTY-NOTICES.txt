@@ -1,0 +1,29 @@
+SentinelZone CryptoGuard 0.22.2-rc.1 — UNSIGNED EVALUATION
+
+Existing SentinelZone Linux 0.22.1 and Windows alpha.3 code is the implementation base.
+LibreHardwareMonitorLib 0.9.6 is a pinned unmodified Windows dependency (MPL-2.0).
+Its license, third-party notices and corresponding 0.9.6 source archive are in
+licenses/windows-alpha3. PawnIO materials retain their upstream notices/LGPL
+terms in that source archive. PawnIO.Modules 0.1.6 source is also supplied in
+licenses/PawnIO.Modules-0.1.6-source.zip under LGPL-2.1-or-later. The runtime
+package does not install a PawnIO driver; upstream source archives retain their
+original resource files solely as corresponding-source materials.
+NuGet package metadata and license files, including Microsoft.Windows.CsWin32
+build dependencies, are preserved in nuget-package-metadata.zip. The release
+SBOM records actual resolved dependencies and payload file hashes.
+
+.NET runtime components: see licenses/dotnet-LICENSE.txt and
+licenses/dotnet-THIRD-PARTY-NOTICES.txt, plus Windows runtime notices.
+Linux dynamically uses OS glibc/OpenSSL/zlib/libgcc and optional installed NVML.
+NVIDIA driver libraries are not redistributed.
+
+Chayesh/cryptoguard (MIT, copyright 2026 Chayesh) is a methodology reference.
+No source, pickle, scaler or dataset was copied; MIT text is included for attribution.
+PubuduTerance/CryptoJackGuard is reference only, license uncertain; no source,
+models, datasets or response/kill code copied. tevador/randomx-sniffer is CC0
+reference only; no implementation bundled. ONNX Runtime is not used.
+
+Research-only Python training requirements have their own upstream licenses;
+the Python packages and research model are not runtime binary dependencies.
+Project owner licensing/signing policy remains separate from dependency notices.
+See docs/RESEARCH-SOURCES.md and the SPDX inventory for provenance details.

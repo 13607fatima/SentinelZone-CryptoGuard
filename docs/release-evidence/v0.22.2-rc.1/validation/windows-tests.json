@@ -1,0 +1,296 @@
+{
+  "passed": 72,
+  "failed": 0,
+  "skipped": 0,
+  "scope": "Preserved legacy regression suite executed on actual VM",
+  "tests": [
+    {
+      "name": "CPU first sample is null",
+      "status": "PASS"
+    },
+    {
+      "name": "CPU normalized to host capacity",
+      "status": "PASS"
+    },
+    {
+      "name": "CPU handles rollback and invalid elapsed",
+      "status": "PASS"
+    },
+    {
+      "name": "Network rate uses actual elapsed",
+      "status": "PASS"
+    },
+    {
+      "name": "Network counter reset is unknown",
+      "status": "PASS"
+    },
+    {
+      "name": "PID reuse changes identity",
+      "status": "PASS"
+    },
+    {
+      "name": "Boot changes identity",
+      "status": "PASS"
+    },
+    {
+      "name": "Identity and sequence survive restart",
+      "status": "PASS"
+    },
+    {
+      "name": "Single writer enforced",
+      "status": "PASS"
+    },
+    {
+      "name": "Command secrets never persisted",
+      "status": "PASS"
+    },
+    {
+      "name": "Quoted Windows path parsed without arguments",
+      "status": "PASS"
+    },
+    {
+      "name": "Ambiguous unquoted path never guessed",
+      "status": "PASS"
+    },
+    {
+      "name": "High CPU alone stays low",
+      "status": "PASS"
+    },
+    {
+      "name": "Port-only connection gives no mining score",
+      "status": "PASS"
+    },
+    {
+      "name": "One generic argument is insufficient",
+      "status": "PASS"
+    },
+    {
+      "name": "Mining argument combination is one evidence group",
+      "status": "PASS"
+    },
+    {
+      "name": "Two independent groups qualify high",
+      "status": "PASS"
+    },
+    {
+      "name": "Expired IOC excluded",
+      "status": "PASS"
+    },
+    {
+      "name": "Wrong process network not attributed",
+      "status": "PASS"
+    },
+    {
+      "name": "Low network traffic cannot veto evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Signature does not cancel mining evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Authorized mining retains activity evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Wrong hash cannot authorize",
+      "status": "PASS"
+    },
+    {
+      "name": "Persistence alone gives no threat",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing CPU cannot create load evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing CPU cannot reuse stale high load",
+      "status": "PASS"
+    },
+    {
+      "name": "Collection gap breaks sustained compute window",
+      "status": "PASS"
+    },
+    {
+      "name": "PID reuse does not inherit CPU window",
+      "status": "PASS"
+    },
+    {
+      "name": "Deterministic replay",
+      "status": "PASS"
+    },
+    {
+      "name": "Lifecycle uses elapsed seconds",
+      "status": "PASS"
+    },
+    {
+      "name": "Lifecycle gaps do not confirm",
+      "status": "PASS"
+    },
+    {
+      "name": "Lifecycle resolves continuously observed absence",
+      "status": "PASS"
+    },
+    {
+      "name": "Trusted malicious hash has independent critical rule",
+      "status": "PASS"
+    },
+    {
+      "name": "Contract roundtrip preserves null and UTC",
+      "status": "PASS"
+    },
+    {
+      "name": "Contract rejects missing required fields",
+      "status": "PASS"
+    },
+    {
+      "name": "Contract rejects unexpected raw command field",
+      "status": "PASS"
+    },
+    {
+      "name": "Spool append restart export and explicit ACK",
+      "status": "PASS"
+    },
+    {
+      "name": "Partial write recovery reports loss",
+      "status": "PASS"
+    },
+    {
+      "name": "Corrupt record does not stop startup",
+      "status": "PASS"
+    },
+    {
+      "name": "Spool priority reserve and explicit loss",
+      "status": "PASS"
+    },
+    {
+      "name": "Retention loss survives restart",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate spool write preserves event UID",
+      "status": "PASS"
+    },
+    {
+      "name": "ACK only after successful fake receiver",
+      "status": "PASS"
+    },
+    {
+      "name": "Unacknowledged event retained on cancellation",
+      "status": "PASS"
+    },
+    {
+      "name": "Offline Authenticode returns signer for runtime host",
+      "status": "PASS"
+    },
+    {
+      "name": "Catalog-only Windows file verifies with Microsoft signer",
+      "status": "PASS"
+    },
+    {
+      "name": "CPU history survives short same-boot restart",
+      "status": "PASS"
+    },
+    {
+      "name": "Long restart gap discards compute history",
+      "status": "PASS"
+    },
+    {
+      "name": "Confirmed alert ID survives restart without duplicate",
+      "status": "PASS"
+    },
+    {
+      "name": "Offline time cannot confirm suspected alert",
+      "status": "PASS"
+    },
+    {
+      "name": "Checkpoint requires same boot and rules version",
+      "status": "PASS"
+    },
+    {
+      "name": "Truncated checkpoint is rejected without partial state",
+      "status": "PASS"
+    },
+    {
+      "name": "Null checkpoint array entries are rejected as invalid data",
+      "status": "PASS"
+    },
+    {
+      "name": "Schema 1.0 event without summary remains readable",
+      "status": "PASS"
+    },
+    {
+      "name": "Suspicion refresh uses cooldown and new process identity",
+      "status": "PASS"
+    },
+    {
+      "name": "Summary weights CPU by real elapsed duration",
+      "status": "PASS"
+    },
+    {
+      "name": "Summary excludes unknown values from mean",
+      "status": "PASS"
+    },
+    {
+      "name": "Summary keeps reused PIDs in different process instances",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing CPU interrupts sustained observation",
+      "status": "PASS"
+    },
+    {
+      "name": "Present process clear gap does not resolve",
+      "status": "PASS"
+    },
+    {
+      "name": "Absent process clear gap does not resolve",
+      "status": "PASS"
+    },
+    {
+      "name": "Spool UID collision rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Export works with live writer without changing state",
+      "status": "PASS"
+    },
+    {
+      "name": "Export cannot overwrite spool",
+      "status": "PASS"
+    },
+    {
+      "name": "Risk outbox survives full spool and restart without lost transition",
+      "status": "PASS"
+    },
+    {
+      "name": "Append before checkpoint clear recovers exactly one event across boot",
+      "status": "PASS"
+    },
+    {
+      "name": "Corrupt risk journal is preserved rather than reset",
+      "status": "PASS"
+    },
+    {
+      "name": "Journal write failure cannot acknowledge risk event",
+      "status": "PASS"
+    },
+    {
+      "name": "Spool accounting updates after ACK and restart",
+      "status": "PASS"
+    },
+    {
+      "name": "Host CPU warmup and memory API",
+      "status": "PASS"
+    },
+    {
+      "name": "TCP IPv4 maps established loopback to PID",
+      "status": "PASS"
+    },
+    {
+      "name": "TCP IPv6 maps established loopback to PID",
+      "status": "PASS"
+    }
+  ]
+}

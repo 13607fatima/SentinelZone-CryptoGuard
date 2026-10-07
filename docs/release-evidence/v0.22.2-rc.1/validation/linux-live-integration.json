@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "duration_seconds": 23.90801775,
+  "cpu_reference_percent_host_capacity": 24.876591870524273,
+  "cpu_measured_percent_host_capacity": 24.752052448397485,
+  "cpu_error_percentage_points": 0.12453942212678726,
+  "cpu_samples": 20,
+  "ipv4_owner": true,
+  "ipv6_owner": true,
+  "confirmed_risk": true,
+  "redaction_disk_log_export": true,
+  "events": 23,
+  "note": "Benign loopback simulation with 5-second confirmation policy; no mining code or external pool."
+}

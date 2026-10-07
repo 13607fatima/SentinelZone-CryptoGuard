@@ -1,0 +1,57 @@
+{
+  "passed": 10,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "high-cpu-benign-heuristic.jsonl",
+      "status": "PASS",
+      "rows": 37
+    },
+    {
+      "name": "high-cpu-benign-shadow.jsonl",
+      "status": "PASS",
+      "rows": 37
+    },
+    {
+      "name": "mining-like-heuristic.jsonl",
+      "status": "PASS",
+      "rows": 37
+    },
+    {
+      "name": "mining-like-shadow.jsonl",
+      "status": "PASS",
+      "rows": 37
+    },
+    {
+      "name": "missing-gpu-heuristic.jsonl",
+      "status": "PASS",
+      "rows": 37
+    },
+    {
+      "name": "missing-gpu-shadow.jsonl",
+      "status": "PASS",
+      "rows": 37
+    },
+    {
+      "name": "normal-browser-heuristic.jsonl",
+      "status": "PASS",
+      "rows": 37
+    },
+    {
+      "name": "normal-browser-shadow.jsonl",
+      "status": "PASS",
+      "rows": 37
+    },
+    {
+      "name": "persistence-plus-network-heuristic.jsonl",
+      "status": "PASS",
+      "rows": 37
+    },
+    {
+      "name": "persistence-plus-network-shadow.jsonl",
+      "status": "PASS",
+      "rows": 37
+    }
+  ],
+  "scope": "Entire normalized risk result; evidence, ML, coverage and lifecycle included"
+}

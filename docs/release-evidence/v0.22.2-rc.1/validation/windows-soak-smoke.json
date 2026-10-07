@@ -1,0 +1,14 @@
+﻿{
+    "samples":  3,
+    "crashes_observed":  0,
+    "reference_host_verified":  false,
+    "requested_hours":  0.005,
+    "cpu_p95":  0,
+    "cpu_mean":  0,
+    "rss_growth_bytes":  512000,
+    "rss_peak_bytes":  78708736,
+    "elapsed_hours":  0.0058364946111111107,
+    "service_restarts":  0,
+    "soak72h":  "UNVERIFIED",
+    "note":  "Live process sampling includes main service and observed helpers; short-lived children may be missed. Reference targets are not automatically certified."
+}

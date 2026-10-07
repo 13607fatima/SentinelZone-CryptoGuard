@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
+export DOTNET_GENERATE_ASPNET_CERTIFICATE=false
+export DEB_BUILD_MAINT_OPTIONS=hardening=+all
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dotnet restore src/CryptoGuard.Agent.Linux -r linux-x64 --locked-mode
+
+override_dh_auto_build:
+	dotnet publish src/CryptoGuard.Agent.Linux -c Release -r linux-x64 --self-contained true --no-restore -p:Version=0.22.2-rc.1 -o artifacts/linux-x64
+
+override_dh_auto_test:
+	dotnet restore tests/CryptoGuard.Tests --locked-mode
+	dotnet run --project tests/CryptoGuard.Tests -c Release --no-restore -- test-results
+	dotnet restore tests/Contract --locked-mode
+	dotnet run --project tests/Contract -c Release --no-restore -- --report validation/unified-linux-tests.json --fixtures contracts/replay
+
+override_dh_auto_clean:
+	rm -rf artifacts/linux-x64
+
+override_dh_installsystemd:
+	dh_installsystemd --name=cryptoguard-collector --no-restart-after-upgrade cryptoguard-collector.service
+	dh_installsystemd --no-restart-after-upgrade cryptoguard-agent.service
+	if [ -d debian/cryptoguard-agent/lib/systemd/system ]; then mkdir -p debian/cryptoguard-agent/usr/lib/systemd/system; mv debian/cryptoguard-agent/lib/systemd/system/*.service debian/cryptoguard-agent/usr/lib/systemd/system/; rmdir debian/cryptoguard-agent/lib/systemd/system debian/cryptoguard-agent/lib/systemd debian/cryptoguard-agent/lib; fi
+
+override_dh_dwz:
+
+override_dh_strip:
+	dh_strip --no-automatic-dbgsym

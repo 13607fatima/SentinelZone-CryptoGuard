@@ -1,0 +1,132 @@
+{
+  "evaluation_scope": "deterministic fixtures; live workload gates tracked separately",
+  "cases": [
+    {
+      "workload": "idle",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 0,
+      "resource_impact": 1
+    },
+    {
+      "workload": "browser",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 25
+    },
+    {
+      "workload": "video",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 25
+    },
+    {
+      "workload": "compile",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 99
+    },
+    {
+      "workload": "windows_update",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 99
+    },
+    {
+      "workload": "antivirus_scan",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 99
+    },
+    {
+      "workload": "backup",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 99
+    },
+    {
+      "workload": "compression",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 99
+    },
+    {
+      "workload": "gaming",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 99
+    },
+    {
+      "workload": "video_encoding",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 99
+    },
+    {
+      "workload": "approved_render",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 99
+    },
+    {
+      "workload": "approved_ai_gpu",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 99
+    },
+    {
+      "workload": "normal_cpu_stress",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 99
+    },
+    {
+      "workload": "normal_ram_stress",
+      "test_type": "canonical_fixture",
+      "status": "PASS",
+      "security_risk": 15,
+      "resource_impact": 99
+    },
+    {
+      "workload": "controlled_suspicious",
+      "test_type": "offline_canonical_fixture_no_network",
+      "status": "PASS"
+    }
+  ],
+  "live_linux_controlled": {
+    "pass": true,
+    "duration_seconds": 23.90801775,
+    "cpu_reference_percent_host_capacity": 24.876591870524273,
+    "cpu_measured_percent_host_capacity": 24.752052448397485,
+    "cpu_error_percentage_points": 0.12453942212678726,
+    "cpu_samples": 20,
+    "ipv4_owner": true,
+    "ipv6_owner": true,
+    "confirmed_risk": true,
+    "redaction_disk_log_export": true,
+    "events": 23,
+    "note": "Benign loopback simulation with 5-second confirmation policy; no mining code or external pool."
+  },
+  "windows_idle_vm": [
+    {
+      "platform": "windows",
+      "name": "No false mining alerts in this idle VM capture",
+      "status": "PASS",
+      "detail": "Narrow idle-VM smoke test, not an accuracy benchmark"
+    }
+  ],
+  "real_normal_workload_suite": "UNVERIFIED beyond recorded idle VM capture",
+  "production_detection_quality": "UNVERIFIED"
+}

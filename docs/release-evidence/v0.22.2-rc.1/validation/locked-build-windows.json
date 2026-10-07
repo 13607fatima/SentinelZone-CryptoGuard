@@ -1,0 +1,9 @@
+﻿{
+    "status":  "PASS",
+    "profiles":  [
+                     "portable",
+                     "win-x64-singlefile",
+                     "win-x64-hardware"
+                 ],
+    "solution_build":  "PASS"
+}

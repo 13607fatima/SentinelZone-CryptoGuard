@@ -1,0 +1,5 @@
+artifacts/linux-x64/cryptoguard-agent usr/lib/cryptoguard
+packaging/agent.json etc/cryptoguard
+schemas/telemetry.schema.json usr/share/cryptoguard/schemas
+rules/ruleset.json usr/share/cryptoguard/rules
+licenses/* usr/share/doc/cryptoguard-agent/licenses
